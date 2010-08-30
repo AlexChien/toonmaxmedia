@@ -1,0 +1,12 @@
+tmp/*
+log/*
+.project
+.idea
+.loadpath
+.metadata/*
+_notes/*
+_notes
+Thumbs.db
+db/*.sqlite3
+db/schema.rb
+config/database.yml
