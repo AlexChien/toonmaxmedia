@@ -3,6 +3,22 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>上海炫动传播股份有限公司 :: Toonmax Media Co., Ltd.</title>
 	<script src="javascripts/swfobject.js"></script> 
+	<script type="text/javascript" charset="utf-8">
+		function showOrgChart(){
+			popup('orgchart.html',861,252);
+		}
+		function popup(src, wWidth, wHeight){
+			var iMyWidth;
+			var iMyHeight;
+			iMyWidth =(window.screen.width / 2) - (wWidth / 2 + 10);
+			//half the screen width minus half the new window width (plus 5 pixel borders).
+			iMyHeight =(window.screen.height /2) - (wHeight / 2 + 15);
+			//half the screen height minus half the new window height (plus title and status bars).
+			var zWin = window.open(src, 'popupwin', "status=no,width=" + wWidth + ",height=" + wHeight + ",resizable=yes,left=" + iMyWidth + ",top=" + iMyHeight + ",screenX=" + iMyWidth + ",screenY=" + iMyHeight + ",scrollbars=yes");
+
+			zWin.focus();
+		}
+	</script>
     <style type="text/css" media="screen">
 		body {
 			margin: 0; 	padding: 0; background-color: #cccccc; color: #333;
@@ -13,7 +29,7 @@
   <body id='bd'>
     <div id="container"></div>
 	<script type="text/javascript" charset="utf-8">
-		var min_height = 600;
+		var min_height = 660;
 		var h = "100%";
 		var ch = document.getElementById("bd").clientHeight;
 		if (ch < min_height) h = min_height;
