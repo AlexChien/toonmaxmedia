@@ -13,7 +13,7 @@
   <body id='bd'>
     <div id="container"></div>
 	<script type="text/javascript" charset="utf-8">
-		var min_height = 533;
+		var min_height = 600;
 		var h = "100%";
 		var ch = document.getElementById("bd").clientHeight;
 		if (ch < min_height) h = min_height;
@@ -23,6 +23,7 @@
 		fl.addParam("allowFullScreen", "true");
 		fl.addParam("scaleMode", "noscale");
 		fl.addParam("align", "tl");
+		if (h!='100%') fl.addVariable('h',h);
 		fl.addVariable('myActiveItem',1);
 		fl.write("container");
 	</script>
