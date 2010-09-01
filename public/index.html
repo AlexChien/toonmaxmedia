@@ -10,10 +10,14 @@
     </style>
     
   </head>
-  <body>
+  <body id='bd'>
     <div id="container"></div>
 	<script type="text/javascript" charset="utf-8">
-		var fl = new SWFObject("home.swf", "fl", "100%", "100%", "8");
+		var min_height = 533;
+		var h = "100%";
+		var ch = document.getElementById("bd").clientHeight;
+		if (ch < min_height) h = min_height;
+		var fl = new SWFObject("home.swf", "fl", "100%", h, "8");
 		fl.addParam("quality","high");
 		fl.addParam("allowScriptAccess","always");
 		fl.addParam("allowFullScreen", "true");
