@@ -5,6 +5,7 @@
 <title>炫动传播 toonmaxmedia</title>
 <link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
+<script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
 <script type="text/javascript">
       $(function(){
         $('li:has(ul)')
@@ -36,6 +37,8 @@
 			var label = $(this).html();
 			$(this).parent().append('<span class="navSpan">'+label+'</span>');$(this).parent().find('a').remove();
 		});
+		
+		$(document).pngFix();
       });
     </script>
 </head>
@@ -65,7 +68,7 @@
   <p>拥有“原创动漫投资中心”、“媒体运营中心”和“产业中心”三大业务板块。</p>
   </span>
   <div class="blank6"></div>
-  <span class="hui">公司架构图(参考)</span> <span><img src="images/toonmaxmedia3.jpg" /></span>
+  <span class="hui">公司架构图(参考)</span> <span><img src="images/toonmaxmedia3.png" /></span>
   <div class="blank6"></div>
   <ul style="padding-left:18px; ">
     <li style="margin-bottom:12px;" class="hui02" > 原创动漫投资中心：原创影视动画投资、制作、发行
