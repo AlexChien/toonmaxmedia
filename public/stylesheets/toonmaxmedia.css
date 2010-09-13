@@ -28,6 +28,9 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .text { font-size:18px; }
 .bottom { width:100%; text-align:center; margin:50px auto 10px auto;}
 .bottom a {color:#acacac;}
+#footer {position:absolute;right:5px;bottom:5px;text-align:center; color:#666; z-index:10;/*width:100%;*/font-size:10px;}
+#footer a {color:#666;}
+
 
 #smglogo{position:absolute;right:2px;}
 .navSpan{display:block;
