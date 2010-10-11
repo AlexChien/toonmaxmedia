@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>炫动传播 toonmaxmedia</title>
+<link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
+<script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
+<script type="text/javascript">
+      $(function(){
+        $('li:has(ul)')
+          .click(function(event){
+            if (this == event.target) {
+              if ($(this).children().is(':hidden')) {
+                $(this)
+                  .css('list-style-image','url(images/toonmaxmedia5.jpg)')
+                  .children().slideDown();
+              }
+              else {
+                $(this)
+                  .css('list-style-image','url(images/toonmaxmedia4.jpg)')
+                  .children().slideUp();
+              }
+            }
+            return false;
+          })
+          .css({cursor:'pointer',
+                'list-style-image':'url(images/toonmaxmedia4.jpg)'})
+          .children().hide();
+        $('li:not(:has(ul))').css({
+          cursor: 'default',
+          'list-style-image':'none'
+        });
+		$(document).pngFix();
+      });
+    </script>
+</head>
+<body>
+<div id="wrap">
+  <div id="main" class="clearfix">
+    <div id="smglogo"><a href="#"><img src="images/smglogo.jpg" /></a></div>
+    <div class="toonmaxmedia">
+      <div class="header">
+        <div class="logo"><img src="images/logo.jpg" /></div>
+        <div class="nav">
+          <ul>
+            <li ><a href="intro.html">公司介绍</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="business.html">主营业务</a></li>
+            <li class="current"><a>公司作品</a></li>
+            <li><a href="brand.html">投资者关系</a></li>
+            <li><a href="#">合作伙伴</a></li>
+            <li><a href="invite.html">招贤纳士</a></li>
+            <div class="blank0"></div>
+          </ul>
+        </div>
+        <div class="blank0"></div>
+      </div>
+      <div class="content"> <a class="corange">卡通总动员</a><br />
+        <a class="corange1">Shanghai Cartoon Festival</a>
+        <div class="blank6"></div>
+        <div class="businesstt">炫动传播自有原创会展品牌，以大型动漫主题嘉年华为形式，自2005年举办以来，卡通总动员以其丰富的动漫内容、精彩的卡通形式、强势的媒体宣传，造就了卡通总动员巨大的社会影响力，成为上海动漫界每年暑期一大盛事，累计观众过百万人次。</div>
+        <div class="blank12"></div>
+        <div class="businesstt3">第六届中国国际动漫游戏博览会暨2010卡通总动员</div>
+        <p>2010年，“卡通总动员”以其多年积累的品牌、专业、规模和人气，获国家文化部认可并授权，与“中国国际动漫游戏博览会”两展合一。2010年7月，炫动传播与国家动漫游戏产业基地共同举办“第六届中国国际动漫游戏博览会暨2010卡通总动员”（简称2010 CCG EXPO）。炫动传播充分发挥自己在动漫业界的领军号召力和权威影响力，在内容上不断创新，在规模上持续扩容，将整个会展升级、升格、升华至覆盖动漫、游戏的全产业链。2010 CCG EXPO旗下囊括了了卡通总动员一大会展、动漫产业四大论坛、原创颁奖一大盛典，充分发挥了两展合一的集合效应，创下观众参观人次、参展商规模、项目对接数和现场交易额新纪录。</p>
+        <div class="blank12"></div>
+        <img src="images/czz.jpg" />
+        <div class="blank12"></div>
+        <div class="contentp01"><a class="corange4">台湾漫画大师蔡志忠先生受炫动传播邀请，为2010 CCG EXPO创作的主题漫画：“仁者乐山，智者乐水，艺者乐漫”</a></div>
+        <div class="blank6"></div>
+      </div>
+      <div class="nav1">
+        <ul>
+          <li ><a href="works.html">动漫作品</a></li>
+          <li><a>电视出品</a></li>
+          <li ><a href="works_radio.html">广播频率</a></li>
+          <li class="current"><a>产业商品</a></li>
+          <li class="nav2"><a >衍生授权</a></li>
+          <li class="nav2"><a href="works_property_sq.html">授权商品 </a></li>
+          <li class="nav2"><a href="works_property_xsdl.html">销售代理商品</a></li>
+          <li class="nav2"><a  style="color:#f39800">会务展览</a></li>
+          <li class="nav2"><a  href="works_property_cbw.html">出版物</a></li>
+        </ul>
+      </div>
+      <div class="blank6"></div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="bottom"> 版权所有:上海炫动传播股份有限公司 | <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
+</div>
+</body>
+</html>

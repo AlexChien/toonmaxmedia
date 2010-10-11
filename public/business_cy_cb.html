@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>炫动传播 toonmaxmedia</title>
+<link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
+<script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
+<script type="text/javascript">
+      $(function(){
+        $('li:has(ul)')
+          .click(function(event){
+            if (this == event.target) {
+              if ($(this).children().is(':hidden')) {
+                $(this)
+                  .css('list-style-image','url(images/toonmaxmedia5.jpg)')
+                  .children().slideDown();
+              }
+              else {
+                $(this)
+                  .css('list-style-image','url(images/toonmaxmedia4.jpg)')
+                  .children().slideUp();
+              }
+            }
+            return false;
+          })
+          .css({cursor:'pointer',
+                'list-style-image':'url(images/toonmaxmedia4.jpg)'})
+          .children().hide();
+        $('li:not(:has(ul))').css({
+          cursor: 'default',
+          'list-style-image':'none'
+        });
+		$(document).pngFix();
+      });
+    </script>
+</head>
+<body>
+<div id="wrap">
+  <div id="main" class="clearfix">
+    <div id="smglogo"><a href="#"><img src="images/smglogo.jpg" /></a></div>
+    <div class="toonmaxmedia">
+      <div class="header">
+        <div class="logo"><img src="images/logo.jpg" /></div>
+        <div class="nav">
+          <ul>
+            <li><a href="intro.html">公司介绍</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li class="current"><a>主营业务</a></li>
+            <li><a href="irm.html">公司产品</a></li>
+            <li><a href="brand.html">投资者关系</a></li>
+            <li><a href="#">合作伙伴</a></li>
+            <li><a href="invite.html">招贤纳士</a></li>
+            <div class="blank0"></div>
+          </ul>
+        </div>
+        <div class="blank0"></div>
+      </div>
+      <div class="content"> <a class="corange"><strong>出版</strong></a><br />
+        <a class="corange1">Publication</a>
+        <div class="blank12"></div>
+        <div class="businesstt">炫动传播依托公司强大的原创内容生产力，以动漫娱乐和儿童教育为切入点，借助公司动漫和儿童品牌的市场号召力，将公司业务延伸拓展至期刊、图书、音像出版等多个领域，推出各类出版物和产品，广受市场好评。</div>
+        <div class="blank12"></div>
+        <div class="businesstt3">期刊出版</div>
+        <p >公司在国内首创儿童多感官立体阅读理念，并申请立体阅读画册国家专利技术，针对3-11岁少儿出版了《哈哈画报》、《哈哈画报•故事城堡》两本儿童期刊，主打“哈哈”品牌，与公司少儿电视节目形成互动效应，为读者提供“全方位立体”阅读体验。公司拥有数量庞大的原创动漫内容版权库，针对11-18岁动漫爱好者推出《炫动纪》杂志，结合公司投拍的动画电影，打造国内顶尖的青春漫画读物。公司利用全产业链的资讯汇集优势，顺应动漫行业的发展态势，关注市场动向，捕捉行业热点，针对动漫产业政策制定者、从业者和研究者推出《炫动观点》行业研究资讯读物。</p>
+        <div class="blank12"></div>
+        <div class="businesstt3">图书出版</div>
+        <p >公司凭借自身原创动漫影视作品投资的规模效应和品牌优势，采用授权、合作出版等形式推出各种动漫衍生读物，合作授权项目《喜羊羊与灰太狼》大电影系列漫画读物已经成为该领域的标杆品牌。</p>
+        <div class="blank12"></div>
+        <div class="businesstt3">电子音像出版</div>
+        <p >公司发挥在自身儿童电视领域的品牌影响和运营经验，积极拓展电视节目衍生出版物。通过对节目资源的整合和主持人的立体包装，出版有“哈哈音乐盒”系列音像读物，首款基于《哈哈早上好》品牌栏目出版发行的“墨墨姐姐《粉墨登场》”儿歌精选CD已于2010年9月出版发行，成为上海首张主持人个人音乐专辑。</p>
+        <div class="blank6"></div>
+      </div>
+      <div class="nav1">
+        <ul>
+          <li><a href="business.html">原创动漫投资</a></li>
+          <li><a href="business_mt.html">媒体运营</a></li>
+          <li class="current"><a href="business_cy.html">产业经营</a></li>
+          <li class="nav2"><a href="business_cy_ys.html">衍生授权</a></li>
+          <li class="nav2"><a href="business_cy_xs.html">销售代理</a></li>
+          <li class="nav2"><a href="business_cy_hz.html">会展</a></li>
+          <li class="nav2"><a style="color:#f39800">出版</a></li>
+          <li class="nav2"><a  href="business_cy_px.html">培训</a></li>
+        </ul>
+      </div>
+      <div class="blank6"></div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="bottom"> 版权所有:上海炫动传播股份有限公司 | <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
+</div>
+</body>
+</html>

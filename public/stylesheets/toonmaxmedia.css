@@ -1,40 +1,84 @@
 @charset "utf-8";
 /* CSS Document */
 
-body { font-family:Arial, Helvetica, sans-serif, "宋体"; font-size:12px; color:#acacac; background:url(../images/toonmaxmedia1.jpg) repeat-x #FFF; }
+body { font-family:Arial, Helvetica, sans-serif, "微软雅黑"; font-size:12px; color:#999999; background:url(../images/bg.jpg) repeat-x #FFF; }
 div, form, img, ul, ol, li, dl, dt, dd { margin: 0; padding: 0; border: 0; }
 body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-style:none; border:0px; }
 .blank0 { margin:0 auto; width:100%; height:0px; font-size:0px; line-height:0px; clear:both }
 .blank6 { margin:0 auto; width:100%; height:6px; font-size:1px; line-height:1px; clear:both }
-.corange { font-family:"微软雅黑"; font-size:18px; color:#f39800; }
-.hui { color:#848484; font-weight:bold; text-decoration:none; }
+.blank12 { margin:0 auto; width:100%; height:12px; font-size:1px; line-height:1px; clear:both }
+.blank20 { margin:0 auto; width:100%; height:20px; font-size:1px; line-height:1px; clear:both }
+.blank30 { margin:0 auto; width:100%; height:30px; font-size:1px; line-height:1px; clear:both }
+.corange { font-family:"微软雅黑"; font-size:20px; color:#f39800; font-weight:bold; }
+.corange1 { font:Arial, Helvetica, sans-serif; font-size:14px; color:#f39800; }
+.corange2 { font:Arial, Helvetica, sans-serif; font-size:12px; color:#f39800; padding:2px; background: #f3f3f3; }
+.corange3 { background-color:#b6b6b6; color:#FFF; height:22px; line-height:22px; font-weight:bold; padding:2px; font-size:12px; }
+.corange4 { font:Arial, Helvetica, sans-serif; font-size:12px; color:#f39800; }
+.corange5 { font:Arial, Helvetica, sans-serif; font-size:12px; color:#f39800; font-weight:bold; }
+.huitiao { height:1px; background-color:#cacaca; overflow:hidden; }
+.coranget{ height:2px; background:#ffffff; overflow:hidden;}
+.red { font:Arial, Helvetica, sans-serif; font-size:12px; color:#e6220b; }
+.hui { font-family:"微软雅黑"; font-size:20px; color:#999999; font-weight:bold; }
+.hui { color:#808080; font-weight:bold; text-decoration:none; }
 .hui01 { color:#acacac; text-decoration:none; line-height:24px; font-weight:normal }
-.hui02 { color:#848484; font-weight:normal; text-decoration:none; }
+.hui02 { color:#808080; font-weight:normal; text-decoration:none; }
+.hui03{ font-family:"微软雅黑"; font-size:18px; color:#999999; font-weight:bold;}
 .toonmaxmedia { width:960px; margin-left:auto; margin-right:auto; }
-.header { width:100%; height:250px; }
+.header { width:100%; height:245px; margin-bottom:40px; }
 .logo { width:320px; float:left; margin:100px 0 0 13px; display:inline; }
-.nav { width:627px; float:left; height:250px; }
-.nav li { height:50px; padding-top:200px; float:left; margin-right:24px; display:inline; width:80px; text-align:center; }
-.nav li.current {background:url(../images/toonmaxmedia2.jpg) no-repeat}
-.nav li.current a {color:#FFF; background-color:#b6b6b6}
-.nav a { font-family:"微软雅黑"; font-size:15px; color:#acacac; font-weight:bold; line-height:29px; text-decoration:none; width:80px; height:29px; display:block; }
-.nav a:hover { font-family:"微软雅黑"; font-size:15px; color:#FFF; font-weight:bold; line-height:29px; background-color:#b6b6b6; width:80px; height:29px; }
-.content { width:820px; margin:50px 0 0 100px; }
-.content span { display:block; margin-bottom:14px; }
-.content p { margin:0 0 6px 0; }
+.nav { width:627px; float:left; height:245px; }
+.nav li { height:50px; padding-top:195px; float:left; margin-right:9px; display:inline; width:80px; text-align:center; }
+.nav li.current { background:url(../images/toonmaxmedia2.jpg) no-repeat }
+.nav li.current a { color:#FFF; background-color:#b6b6b6 }
+.nav a { font-family:"微软雅黑"; font-size:14px; color:#999999; font-weight:bold; line-height:29px; text-decoration:none; width:80px; height:29px; display:block; }
+.nav a:hover { font-family:"微软雅黑"; font-size:14px; color:#999999; font-weight:bold; line-height:29px; background-color:#fff; width:80px; height:29px; }
+.content { width:760px; margin:0px 40px 0 50px; float:left; display:inline; }
+.content p { margin:0 0 6px 0; line-height:22px; text-indent:24px; }
+.contentp01 { text-indent:0px; line-height:22px; margin-bottom:4px; }
+.content01 { width:800px; margin:0px auto 0 auto; margin-top:80px; }
+.content01 p { margin:0 0 6px 0; line-height:32px; text-indent:24px; color:#808080;  font-family:"微软雅黑"; font-size:18px; }
+.nav1 { width:95px; float:left; border-left:#cacaca 1px solid; margin-left:10px; padding:18px 0 25px 0; }
+.nav1 li { height:26px; margin-bottom:2px; background:#f3f3f3; line-height:26px; }
+.nav1 li.current { background:#ffe100; }
+.nav1 li.current a { color:#FFF; font-weight:bold; }
+.nav1 a { font-size:12px; color:#999999; line-height:26px; text-decoration:none; width:85px; height:26px; display:block; padding-left:10px; }
+.nav1 a:hover { font-size:12px; color:#FFF; font-weight:bold; line-height:26px; text-decoration:none; width:85px; height:26px; display:block; padding-left:10px; background:#ffe100; }
+.nav1 li.nav2 a { background-color:#FFF; color:#999999; font-weight: normal; }
+.nav1 li.nav2 a:hover { background:#FFF; color:#f39800; font-weight: normal; }
 .jiahao { margin-bottom:12px; }
 .jiahao span { display:block; float:left; margin:0; }
 .jhspan { width:15px; font-size:16px; font-weight:bold; color:#f29200; }
 .text { font-size:18px; }
-.bottom { width:100%; text-align:center; margin:50px auto 10px auto;}
-.bottom a {color:#acacac;}
+#smglogo { position:absolute; right:2px; }
+.navSpan { display:block; font-family:"微软雅黑"; font-size:15px; font-weight:bold; height:29px; line-height:29px; text-decoration:none; width:80px; }
+.news { margin-bottom:25px; }
+.news ul { width:760px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
+.news li { line-height:30px; }
+.news a { font-family:"宋体"; font-size:12px; color:#999999; text-decoration:none; padding-left:10px; }
+.news a:hover { font-family:"宋体"; font-size:12px; color:#f39800; background:url(../images/news.jpg) no-repeat 0 3px; padding-left:10px; }
+.newstitle { border-bottom:1px solid #cacaca; padding-bottom:10px; }
+.businesstt { line-height:26px; font-weight:bold; color:#808080; font-size:13px; }
+.businesstt1 { line-height:20px; background:url(../images/bg01.jpg) no-repeat; color:#FFF; font-weight:bold; width:80px; text-align:center; margin-bottom:2px; }
+.businesstt2 { line-height:20px; font-weight:bold; width:80px; margin-bottom:2px; margin-top:2px; background:url(../images/news01.jpg) no-repeat 0 7px; padding-left:10px; font-size:13px; color:#808080; }
+.businesstt3 { line-height:26px; font-weight:bold; color:#f39800; font-size:13px; }
+.works { clear:both; }
+.img { width:150px; margin:0 10px 0 0; float:left;}
+.jiantou { background:url(../images/works1.jpg) no-repeat 6px 26px; width:25px; height:186px; float:left;}
+.introduce { width:570px; float:left; margin-top:10px; }
+.introduce img{ border:0px; margin:0px; padding:0px;}
+.introduce01{ padding:15px 20px 6px 20px; background:#f3f3f3;}
 
-#smglogo{position:absolute;right:2px;}
-.navSpan{display:block;
-font-family:"微软雅黑";
-font-size:15px;
-font-weight:bold;
-height:29px;
-line-height:29px;
-text-decoration:none;
-width:80px;}
+/*Sticky Footer:*/
+html, body, #wrap { height: 100%; }
+body > #wrap { height: auto; min-height: 100%; }
+#main { padding-bottom: 80px; }  /* must be same height as the footer */
+#footer { position: relative; margin-top: -80px; /* negative value of footer height */ height: 80px; clear:both; }
+.bottom { width:100%; text-align:center; margin-left:auto; margin-right:auto; position:absolute; bottom:0;}
+.bottom a { color:#acacac; line-height:30px; }
+/*分页*/
+DIV.yellow { padding:7px 7px 7px 7px; text-align:left; }
+DIV.yellow A { border:#e6e6e6 1px solid; padding:1px 5px 1px 5px; margin:2px; text-decoration:none; color:#999; }
+DIV.yellow A:hover { border:#e6e6e6 1px solid; color:#999; }
+DIV.yellow A:active { border:#e6e6e6 1px solid; color:#999; }
+DIV.yellow SPAN.current { BACKGROUND-COLOR: #999; border: #999 1px solid; padding:1px 5px 1px 5px; margin:2px; font-weight:bold; color:#FFF; }
+DIV.yellow SPAN.disabled { border:#f5f5f5 1px solid; padding:1px 5px 1px 5px; margin:2px; color:#e6e6e6; }

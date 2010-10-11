@@ -110,4 +110,5 @@ jQuery.fn.pngFix = function(settings) {
 
 };
 
+
 })(jQuery);
