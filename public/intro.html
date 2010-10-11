@@ -31,11 +31,19 @@
           cursor: 'default',
           'list-style-image':'none'
         });
+
+		// unlink the rest of the nav
+		$('.nav li:not(:first) a').each(function(){
+			var label = $(this).html();
+			$(this).parent().append('<span class="navSpan">'+label+'</span>');$(this).parent().find('a').remove();
+		});
+		
 		$(document).pngFix();
       });
     </script>
 </head>
 <body>
+
 <div id="wrap">
   <div id="main" class="clearfix">
     <div id="smglogo"><a href="#"><img src="images/smglogo.jpg" /></a></div>
