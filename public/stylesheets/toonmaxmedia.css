@@ -6,7 +6,6 @@ div, form, img, ul, ol, li, dl, dt, dd { margin: 0; padding: 0; border: 0; }
 body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-style:none; border:0px; }
 .blank0 { margin:0 auto; width:100%; height:0px; font-size:0px; line-height:0px; clear:both }
 .blank6 { margin:0 auto; width:100%; height:6px; font-size:1px; line-height:1px; clear:both }
-<<<<<<< HEAD:public/stylesheets/toonmaxmedia.css
 .blank12 { margin:0 auto; width:100%; height:12px; font-size:1px; line-height:1px; clear:both }
 .blank20 { margin:0 auto; width:100%; height:20px; font-size:1px; line-height:1px; clear:both }
 .blank30 { margin:0 auto; width:100%; height:30px; font-size:1px; line-height:1px; clear:both }
@@ -36,8 +35,11 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .content { width:760px; margin:0px 40px 0 50px; float:left; display:inline; }
 .content p { margin:0 0 6px 0; line-height:22px; text-indent:24px; }
 .contentp01 { text-indent:0px; line-height:22px; margin-bottom:4px; }
-.content01 { width:800px; margin:0px auto 0 auto; margin-top:80px; }
-.content01 p { margin:0 0 6px 0; line-height:32px; text-indent:24px; color:#808080;  font-family:"微软雅黑"; font-size:18px; }
+.content01 { width:780px; height:170px; margin:0px auto 0 auto; margin-top:60px; background:url(../images/invitebg.jpg) no-repeat; padding:30px 25px 0 25px;}
+.content01 p { margin:0 0 6px 0; line-height:32px; color:#808080; text-indent:36px; font-family:"微软雅黑"; font-size:18px; }
+.content01a { width:118px; height:28px; background:url(../images/invite.jpg) no-repeat; text-align:center; color:#FFF;  line-height:28px; padding:2px 5px 2px 5px; margin-left:4px;}
+.content02 { width:770px; margin:0px auto 0 auto; }
+.content02 p{ margin:0 0 6px 0; line-height:22px; }
 .nav1 { width:95px; float:left; border-left:#cacaca 1px solid; margin-left:10px; padding:18px 0 25px 0; }
 .nav1 li { height:26px; margin-bottom:2px; background:#f3f3f3; line-height:26px; }
 .nav1 li.current { background:#ffe100; }
@@ -55,8 +57,8 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .news { margin-bottom:25px; }
 .news ul { width:760px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
 .news li { line-height:30px; }
-.news a { font-family:"宋体"; font-size:12px; color:#999999; text-decoration:none; padding-left:10px; }
-.news a:hover { font-family:"宋体"; font-size:12px; color:#f39800; background:url(../images/news.jpg) no-repeat 0 3px; padding-left:10px; }
+.news a { font-family:"微软雅黑"; font-size:12px; color:#999999; text-decoration:none; padding-left:10px; }
+.news a:hover { font-family:"微软雅黑"; font-size:12px; color:#f39800; background:url(../images/news.jpg) no-repeat 0 3px; padding-left:10px; }
 .newstitle { border-bottom:1px solid #cacaca; padding-bottom:10px; }
 .businesstt { line-height:26px; font-weight:bold; color:#808080; font-size:13px; }
 .businesstt1 { line-height:20px; background:url(../images/bg01.jpg) no-repeat; color:#FFF; font-weight:bold; width:80px; text-align:center; margin-bottom:2px; }
@@ -68,14 +70,21 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .introduce { width:570px; float:left; margin-top:10px; }
 .introduce img{ border:0px; margin:0px; padding:0px;}
 .introduce01{ padding:15px 20px 6px 20px; background:#f3f3f3;}
+.contact{ font-family:"微软雅黑"; font-size:16px; color:#999999; background:url(../images/contact.jpg) no-repeat ; padding-left:36px;}
+.copyright { margin:50px 0 0 600px; line-height:18px;}
+.copyrighta { width:19px; height:19px; background:url(../images/copyright.jpg) no-repeat; color:#FFF; font-weight:bold; padding:2px 6px 2px 6px; margin-right:4px;}
 
 /*Sticky Footer:*/
 html, body, #wrap { height: 100%; }
 body > #wrap { height: auto; min-height: 100%; }
-#main { padding-bottom: 80px; }  /* must be same height as the footer */
-#footer { position: relative; margin-top: -80px; /* negative value of footer height */ height: 80px; clear:both; }
-.bottom { width:100%; text-align:center; margin-left:auto; margin-right:auto; position:absolute; bottom:0;}
-.bottom a { color:#acacac; line-height:30px; }
+#main { padding-bottom: 100px; }  /* must be same height as the footer */
+#footer { position: relative; margin-top: -100px; /* negative value of footer height */ height: 100px; clear:both; width:910px; margin-left:auto; margin-right:auto; padding-left:50px; }
+.bottom { width:910px; text-align:left; position:absolute; bottom:0;  border-top:#cacaca 1px solid; margin-bottom:10px;}
+.bottom01{ width:810px; float:left;}
+.bottom01 a { color:#acacac; line-height:16px; }
+.bottom02{ width:100px; float:left;}
+.bottom02 a{ color:#f39800; text-decoration:none; line-height:18px; padding-left:11px;}
+.bottom02 a:hover{ color:#f39800; text-decoration:none; line-height:18px; padding-left:11px; background:url(../images/news.jpg) no-repeat 2px 4px;}
 /*分页*/
 DIV.yellow { padding:7px 7px 7px 7px; text-align:left; }
 DIV.yellow A { border:#e6e6e6 1px solid; padding:1px 5px 1px 5px; margin:2px; text-decoration:none; color:#999; }
@@ -83,5 +92,3 @@ DIV.yellow A:hover { border:#e6e6e6 1px solid; color:#999; }
 DIV.yellow A:active { border:#e6e6e6 1px solid; color:#999; }
 DIV.yellow SPAN.current { BACKGROUND-COLOR: #999; border: #999 1px solid; padding:1px 5px 1px 5px; margin:2px; font-weight:bold; color:#FFF; }
 DIV.yellow SPAN.disabled { border:#f5f5f5 1px solid; padding:1px 5px 1px 5px; margin:2px; color:#e6e6e6; }
-
-
