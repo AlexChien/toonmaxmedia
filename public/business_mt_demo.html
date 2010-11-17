@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>炫动传播 toonmaxmedia</title>
+<link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
+<script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
+<script type="text/javascript" src="javascripts/swfobject.js"></script>
+<script type="text/javascript">
+      $(function(){
+        $('li:has(ul)')
+          .click(function(event){
+            if (this == event.target) {
+              if ($(this).children().is(':hidden')) {
+                $(this)
+                  .css('list-style-image','url(images/toonmaxmedia5.jpg)')
+                  .children().slideDown();
+              }
+              else {
+                $(this)
+                  .css('list-style-image','url(images/toonmaxmedia4.jpg)')
+                  .children().slideUp();
+              }
+            }
+            return false;
+          })
+          .css({cursor:'pointer',
+                'list-style-image':'url(images/toonmaxmedia4.jpg)'})
+          .children().hide();
+        $('li:not(:has(ul))').css({
+          cursor: 'default',
+          'list-style-image':'none'
+        });
+		$(document).pngFix();
+      });
+    </script>
+</head>
+<body>
+<div id="wrap">
+  <div id="main" class="clearfix">
+    <div id="smglogo"><a href="#"><img src="images/smglogo.jpg" /></a></div>
+    <div class="toonmaxmedia">
+      <div class="header">
+        <div class="logo"><img src="images/logo.jpg" /></div>
+        <div class="nav" id="nav">
+          <ul>
+            <li><a href="intro.html">公司介绍</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li class="current"><a>主营业务</a></li>
+            <li><a href="works.html">公司作品</a></li>
+            <li><a href="#">投资者关系</a></li>
+            <li><a href="#">合作伙伴</a></li>
+            <li><a href="invite.html">招贤纳士</a></li>
+            <div class="blank0"></div>
+          </ul>
+        </div>
+        <div class="blank0"></div>
+      </div>
+	  <script type="text/javascript" charset="utf-8">
+		var fl = new SWFObject("/flash/nav.swf", "fl", 613, 245, "8");
+		fl.addParam("quality","high");
+		fl.addParam("allowScriptAccess","always");
+		fl.addParam("wmode","transparent");
+		fl.addVariable("cur_sec", document.location.href.split('/').pop().split('.')[0].split('_')[0]);
+		fl.write("nav");
+	  </script>
+      <div class="location"> <span><strong>您的位置</strong></span>
+        <div class="blank6"></div>
+        <span class=" locspan01a">主营业务</span> <span class="locspan02a">媒体运营</span> </div>
+      <div class="content"> <a class="corange">媒体运营中心</a><br />
+        <a class="corange1">Media Operation Centre</a>
+        <div class="blank6"></div>
+        <div class="businesstt">广播电视节目制作、频道频率广告运营</div>
+        <div class="blank12"></div>
+        <p >炫动传播具备业内最先进的节目制作理念和编审流程，编播“三合适原则”、节目“教育大纲”、制作“三圈模式”、编审“内容准入原则”成为行业标杆；建立业内最精良齐全的少儿节目版权库，覆盖少儿教娱和动漫资讯，构筑了一条0-14岁儿童及家长完整节目链，并多次获得“中国广播影视大奖”、“星光奖”、“金鹰奖”等各类政府奖项和行业大奖。</p>
+        <p>炫动传播承担上海广播电视台旗下炫动卡通卫视和哈哈少儿频道的节目制作和广告运营，在公司多年的品牌经营下，炫动卡通卫视获国家广电总局颁发的2006、2008、2009全国优秀动画频道一等奖、2007全国优秀动画频道特等奖，哈哈少儿频道2006、2007、2008、2009连续四年获全国优秀少儿频道一等奖。公司控股子公司上海东方广播有限公司承担上海广播电视台旗下全部11套广播频率的广告经营业务，以及交通、资讯、音乐、戏曲、故事等7套广播频率的节目制作，是中国最具影响力的广播媒体公司。</p>
+        <div class="blank6"></div>
+      </div>
+      <div class="nav1">
+        <ul>
+          <li><a href="business.html">原创动漫投资</a></li>
+          <li class="current"><a>媒体运营</a></li>
+          <li class="nav2"><a href="business_mt_tv.html" >电视 </a></li>
+          <li class="nav2"><a  href="business_mt_radio.html">广播 </a></li>
+          <li><a href="business_cy.html">产业经营</a></li>
+        </ul>
+      </div>
+      <div class="blank6"></div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="bottom">
+    <div class="blank6"></div>
+    <div class="bottom01">Copyright © 2004-2010 Toonmax Media Co.,Ltd. All Rights Reserved <br/>
+      上海炫动传播股份有限公司 版权所有<br/>
+      <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
+    <div class="bottom02"><a href="contact.html">联系我们</a><br/>
+      <a href="copyright.html">版权声明</a></div>
+  </div>
+</div>
+</body>
+</html>
