@@ -4,9 +4,6 @@
     <title>上海炫动传播股份有限公司 :: Toonmax Media Co., Ltd.</title>
 	<script src="javascripts/swfobject.js"></script> 
 	<script type="text/javascript" charset="utf-8">
-		function showOrgChart(){
-			popup('orgchart.html',861,252);
-		}
 		function popup(src, wWidth, wHeight){
 			var iMyWidth;
 			var iMyHeight;
@@ -21,7 +18,7 @@
 	</script>
     <style type="text/css" media="screen">
 		html,body {
-			background-color: #cccccc; color: #333;
+			background-color: #000000; color: #333;
 			margin:0px;
 			padding:0px;
 			width:100%;
@@ -33,19 +30,13 @@
   <body id='bd'>
     <div id="container"></div>
 	<script type="text/javascript" charset="utf-8">
-		var min_height = 660;
-		var h = "100%";
-		var ch = document.getElementById("bd").clientHeight;
-		if (ch < min_height) h = min_height;
-		var fl = new SWFObject("home.swf", "fl", "100%", h, "8");
+		var fl = new SWFObject("/flash/homev2.swf", "fl", "100%", "100%", "8");
 		fl.addParam("quality","high");
 		fl.addParam("allowScriptAccess","always");
 		fl.addParam("allowFullScreen", "true");
-		fl.addParam("scaleMode", "noscale");
-		fl.addParam("align", "tl");
-		fl.addParam("wmode", "transparent");
-		if (h!='100%') fl.addVariable('h',h);
-		fl.addVariable('myActiveItem',1);
+		// fl.addParam("scaleMode", "exactfit");
+		// fl.addParam("align", "tl");
+		// fl.addParam("wmode", "transparent");
 		fl.write("container");
 	</script>
   </body>
