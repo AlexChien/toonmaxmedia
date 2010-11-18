@@ -6,6 +6,7 @@
 <link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
 <script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
+<script type="text/javascript" src="javascripts/swfobject.js"></script>
 <script type="text/javascript">
       $(function(){
         $('li:has(ul)')
@@ -13,25 +14,24 @@
             if (this == event.target) {
               if ($(this).children().is(':hidden')) {
                 $(this)
-                  .css('list-style-image','url(images/toonmaxmedia5-1.jpg)')
+                  .css('list-style-image','url(images/toonmaxmedia5.jpg)')
                   .children().slideDown();
               }
               else {
                 $(this)
-                  .css('list-style-image','url(images/toonmaxmedia4-1.jpg)')
+                  .css('list-style-image','url(images/toonmaxmedia4.jpg)')
                   .children().slideUp();
               }
             }
             return false;
           })
           .css({cursor:'pointer',
-                'list-style-image':'url(images/toonmaxmedia4-1.jpg)'})
+                'list-style-image':'url(images/toonmaxmedia4.jpg)'})
           .children().hide();
         $('li:not(:has(ul))').css({
           cursor: 'default',
           'list-style-image':'none'
         });
-			
 		$(document).pngFix();
       });
     </script>
@@ -43,13 +43,13 @@
     <div class="toonmaxmedia">
       <div class="header">
         <div class="logo"><img src="images/logo.jpg" /></div>
-        <div class="nav">
+        <div class="nav" id="nav">
           <ul>
-            <li class="current"><a>公司介绍</a></li>
+            <li ><a href="intro.html">公司介绍</a></li>
             <li><a href="news.html">新闻中心</a></li>
             <li><a href="business.html">主营业务</a></li>
-            <li><a href="works.html">公司作品</a></li>
-            <li><a href="#">投资者关系</a></li>
+            <li ><a href="works.html">公司作品</a></li>
+            <li class="current"><a href="brand.html">投资者关系</a></li>
             <li><a href="#">合作伙伴</a></li>
             <li><a href="invite.html">招贤纳士</a></li>
             <div class="blank0"></div>
@@ -57,19 +57,16 @@
         </div>
         <div class="blank0"></div>
       </div>
-      <div class="location"> <span><strong>您的位置</strong></span>
+      <div class="content">
         <div class="blank6"></div>
-        <span class=" locspan01a">公司介绍</span> <span class="locspan02a">组织架构</span> </div>
-      <div class="content"><span><img src="images/toonmaxmedia3-4.jpg"  /></span>
-        <div class=" blank20"></div>
       </div>
       <div class="nav1">
         <ul>
-          <li><a href="intro.html">公司简介</a></li>
-          <li class="current"><a>组织架构</a></li>
-          <li><a href="intro02.html">高管团队</a></li>
-          <li><a href="intro03.html">公司荣誉</a></li>
-          <li><a>大事记</a></li>
+          <li class="current"><a>基本信息</a></li>
+          <li><a>股票走势</a></li>
+          <li><a>信息公告</a></li>
+          <li><a>定期报告</a></li>
+          <li><a>联系董秘</a></li>
         </ul>
       </div>
       <div class="blank6"></div>
@@ -77,14 +74,8 @@
   </div>
 </div>
 <div id="footer">
-  <div class="bottom">
-    <div class="blank6"></div>
-    <div class="bottom01">Copyright © 2004-2010 Toonmax Media Co.,Ltd. All Rights Reserved <br/>
-      上海炫动传播股份有限公司 版权所有<br/>
-      <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
-    <div class="bottom02"><a href="contact.html">联系我们</a><br/>
-      <a href="copyright.html">版权声明</a></div>
-  </div>
+  <div class="bottom"> 版权所有:上海炫动传播股份有限公司 | <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
+
 </div>
 </body>
 </html>

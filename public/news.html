@@ -6,6 +6,7 @@
 <link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
 <script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
+<script type="text/javascript" src="javascripts/swfobject.js"></script>
 <script type="text/javascript">
       $(function(){
         $('li:has(ul)')
@@ -42,7 +43,7 @@
     <div class="toonmaxmedia">
       <div class="header">
         <div class="logo"><img src="images/logo.jpg" /></div>
-        <div class="nav">
+        <div class="nav" id="nav">
           <ul>
             <li><a href="intro.html">公司介绍</a></li>
             <li class="current"><a>新闻中心</a></li>
@@ -56,6 +57,7 @@
         </div>
         <div class="blank0"></div>
       </div>
+      <script type="text/javascript" charset="utf-8">var fl = new SWFObject("/flash/nav.swf", "fl", 613, 245, "8");fl.addParam("quality","high");fl.addParam("allowScriptAccess","always");fl.addParam("wmode","transparent");fl.addVariable("cur_sec", document.location.href.split('/').pop().split('.')[0].split('_')[0]);fl.write("nav");</script>
       <div class="location"> <span><strong>您的位置</strong></span>
         <div class="blank6"></div>
         <span class=" locspan01a">新闻中心</span> <span class="locspan02a">公司新闻</span> </div>
