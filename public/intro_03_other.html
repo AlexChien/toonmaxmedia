@@ -14,24 +14,25 @@
             if (this == event.target) {
               if ($(this).children().is(':hidden')) {
                 $(this)
-                  .css('list-style-image','url(images/toonmaxmedia5.jpg)')
+                  .css('list-style-image','url(images/toonmaxmedia5-1.jpg)')
                   .children().slideDown();
               }
               else {
                 $(this)
-                  .css('list-style-image','url(images/toonmaxmedia4.jpg)')
+                  .css('list-style-image','url(images/toonmaxmedia4-1.jpg)')
                   .children().slideUp();
               }
             }
             return false;
           })
           .css({cursor:'pointer',
-                'list-style-image':'url(images/toonmaxmedia4.jpg)'})
+                'list-style-image':'url(images/toonmaxmedia4-1.jpg)'})
           .children().hide();
         $('li:not(:has(ul))').css({
           cursor: 'default',
           'list-style-image':'none'
         });
+			
 		$(document).pngFix();
       });
     </script>
@@ -45,10 +46,10 @@
         <div class="logo"><img src="images/logo.jpg" /></div>
         <div class="nav" id="nav">
           <ul>
-            <li ><a href="intro.html">公司介绍</a></li>
+            <li class="current"><a>公司介绍</a></li>
             <li><a href="news.html">新闻中心</a></li>
             <li><a href="business.html">主营业务</a></li>
-            <li class="current"><a>公司作品</a></li>
+            <li><a href="works.html">公司作品</a></li>
             <li><a href="#">投资者关系</a></li>
             <li><a href="#">合作伙伴</a></li>
             <li><a href="invite.html">招贤纳士</a></li>
@@ -60,35 +61,35 @@
       <script type="text/javascript" charset="utf-8">var fl = new SWFObject("/flash/nav.swf", "fl", 613, 245, "8");fl.addParam("quality","high");fl.addParam("allowScriptAccess","always");fl.addParam("wmode","transparent");fl.addVariable("cur_sec", document.location.href.split('/').pop().split('.')[0].split('_')[0]);fl.write("nav");</script>
       <div class="location"> <span><strong>您的位置</strong></span>
         <div class="blank6"></div>
-        <span class=" locspan01a">公司作品</span> <span class="locspan02b">产业商品</span><span class="locspan03a">授权商品</span><div class="fhsy"> <a href="intro.html">返回首页</a></div> </div>
-      <div class="content"><a class="corange">授权商品</a><br />
-        <a class="corange1">Authorized Commodity</a>
-        <div class="blank12"></div>
-        <div class="businesstt3">粉宝乐园（FIMBLES）</div>
-        <p>英国BBC环球公司授权。《粉宝乐园》在英国，每天有超过100万的父母观众陪同孩子们一同收看，其音像制品售出1100万部、图书售出1500万部；在全球，《粉宝乐园》在74个国家引起幼儿家庭的收视热潮。
-          2007年，炫动传播将“粉宝乐园”带到中国，登陆哈哈少儿频道，并先后与优扬传媒与天络行达成节目发行代理和产品授权代理合作。 </p>
-        <div class="blank12"></div>
-        <div class="businesstt3">奥莉薇（OLIVIA）</div>
-        <p>英国Chrion公司授权。《奥莉薇》经典系列图书在全球已销售超过6000万本，被翻译成20多种语言在世界范围内发行；《奥莉薇》电视动画第一季在美国播出时，在2-5岁儿童观众受欢迎节目排名中位列第六，在6-11岁女孩观众受欢迎节目排名中名列第一。
-          2010年，炫动传播将“奥莉薇”带到中国，开展形象授权和产品授权，现已开展“奥莉薇”动画片绘本故事和DVD出版项目。 </p>
-        <div class="blank12"></div>
-        <div class="businesstt3">网球王子</div>
-        <p>日本集英社授权。《网球王子》是继《灌篮高手》之后又一部以运动为主题的漫画。《网球王子》在日本已累积4000多万本的销售纪录。并先后改编推出小说、动画、游戏、音乐、OVA、真人版电影、舞台剧、电视剧及各类衍生品。
-          2005年，炫动传播将“网球王子”带到中国，先后与12家机构洽谈开展了音像和产品授权，涉及近十大类产品。 </p>
+        <span class=" locspan01a">公司介绍</span> <span class="locspan02b">公司荣誉</span> <span class="locspan03a">　其 他</span><div class="fhsy"> <a href="intro.html">返回首页</a></div></div>
+      <div class="content"> <span><a class="corange">其他</a></span>
+        <div class="blank6"></div>
+      
+        <div class="businesstt4">公司董事、总经理<a class="corange6">杨文艳</a>女士获中国电视艺术家协会卡通艺术委员会主办的“2010天下动漫风云榜”之“年度风云人物”称号。
+</div>
+        <div class="businesstt4"><a class="corange6">《喜羊羊与灰太狼之虎虎生威》</a>营销团队获中国电视艺术家协会卡通艺术委员会主办的“2010天下动漫风云榜”之“年度营销推广奖”。
+        </div>
+          <div class="businesstt4">公司知名少儿电视节目主持人<a class="corange6">豆豆姐姐</a>获第四届上海“德艺双馨电视艺术工作者”称号，第24届“中国电视金鹰奖”电视节目主持人提名奖。
+        </div>
+          <div class="businesstt4">公司知名少儿电视节目主持人<a class="corange6">小荷姐姐</a>获“第六届上海文化新人”称号，“2007中国‘金话筒’爱心传播活动”个人一等奖——“爱心大使”荣誉称号。
+        </div>
+          <div class="blank6"></div>
+       
         <div class="blank6"></div>
       </div>
       <div class="nav1">
         <ul>
-          <li ><a href="works.html">动漫作品</a></li>
-          <li><a>电视出品</a></li>
-          <li ><a href="works_radio.html">广播频率</a></li>
-          <li class="current01"><a>产业商品</a></li>
-          <li class="nav2"><a >衍生授权</a></li>
-          <li class="nav2"><a style="color:#f39800">授权商品 </a></li>
-          <li class="nav2"><a  href="works_property_xsdl.html">销售代理商品</a></li>
-          <li class="nav2"><a  href="works_property_hz.html">会务展览</a></li>
-          <li class="nav2"><a  href="works_property_cbw.html">出版物</a></li>
-          <div class="nav2a"></div>
+          <li ><a href="intro.html">公司简介</a></li>
+          <li><a href="intro_01.html">组织架构</a></li>
+          <li><a href="intro_02.html">高管团队</a></li>
+          <li class="current01"><a>公司荣誉</a></li>
+        
+           <li class="nav2"><a  href="intro_03.html">动画/电影类 </a></li>
+          <li class="nav2"><a href="intro_03_tv.html">电视类</a></li>
+          <li class="nav2"><a  href="intro_03_community.html">公益类</a></li>
+          <li class="nav2"><a style=" color:#f39800">其他</a></li>
+           <div class="nav2a"></div>
+          <li><a>大事记</a></li>
         </ul>
       </div>
       <div class="blank6"></div>
