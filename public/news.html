@@ -5,6 +5,7 @@
 <title>炫动传播 toonmaxmedia</title>
 <link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
+<script type="text/javascript" src="javascripts/jquery.query-2.1.7.js"></script>
 <script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
 <script type="text/javascript" src="javascripts/swfobject.js"></script>
 <script type="text/javascript">
@@ -32,8 +33,46 @@
           cursor: 'default',
           'list-style-image':'none'
         });
+
+		prepareNewsList();
+		
 		$(document).pngFix();
       });
+
+		function prepareNewsList(){
+			var container = '#news_container';
+			var tag = 'item';
+			var cat_id = "1";
+			
+			if ($.query.get('category_id')) cat_id = $.query.get('category_id');
+			
+			$.ajax({
+				url:'/xml/list-'+cat_id+'.xml',
+				type:'GET',
+				dataType:'xml',
+				timeout:1000,
+				error:function(){alert('您请求的资源暂不可用，请稍后再试。');history.back();},
+				success:function(xml){
+					//no list item found
+					if ($(xml).find(tag).length == 0){
+						$(container).html('暂无新闻动态.');
+						return;
+					}
+					
+					var str = '<ul>';
+					// found list items
+					$(xml).find(tag).each(function(item){
+						str += '<li><a href="/news_content.html?id='+$(this).attr('id')+'">'+$(this).children('title').text()+'</a></li>';
+					});
+					str += '</ul>';
+				
+					$(container).html(str);
+					
+					// hl category
+					$('.nav1 #cat'+cat_id).attr('class','current');
+				}
+			});
+		}
     </script>
 </head>
 <body>
@@ -62,36 +101,11 @@
         <div class="blank6"></div>
         <span class=" locspan01a">新闻中心</span> <span class="locspan02a">公司新闻</span><div class="fhsy"> <a href="intro.html">返回首页</a></div> </div>
       <div class="content">
-        <div class="news">
-          <ul>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公</a></li>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻
-              
-              公司新闻公司</a></li>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司新闻公司新公司新闻公司 </a></li>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司公司
-              
-              新闻公司新闻公司</a></li>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻司新闻公司新闻公
-              
-              司新闻公司</a></li>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻
-              
-              公司新闻公司</a></li>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司新新闻公司新闻公司新闻公司新
-              
-              闻公司新闻公司</a></li>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻
-              
-              公司新闻公司新闻公司</a></li>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻公司新闻
-              
-              公司</a></li>
-            <li><a href="news_content.html">公司新闻公司新闻公司新闻公司新闻公司</a></li>
-          </ul>
-        </div>
+	
+        <div class="news" id="news_container"></div>
+
         <div class="blank12"></div>
-        <div class="yellow"><span class="disabled"> < </span><span class="current">1</span><a href="#?
+        <div class="yellow" style="display:none;"><span class="disabled"> < </span><span class="current">1</span><a href="#?
 
 page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?
 
@@ -101,9 +115,9 @@ href="#?page=2"> > </a></div>
       </div>
       <div class="nav1">
         <ul>
-          <li class="current"><a>公司新闻</a></li>
-          <li><a>产品新闻</a></li>
-          <li><a>媒体报道</a></li>
+          <li id="cat1"><a href="news.html?category_id=1">公司新闻</a></li>
+          <li id="cat2"><a href="news.html?category_id=2">产品新闻</a></li>
+          <li id="cat3"><a href="news.html?category_id=3">媒体报道</a></li>
         </ul>
       </div>
       <div class="blank6"></div>

@@ -5,6 +5,7 @@
 <title>炫动传播 toonmaxmedia</title>
 <link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
+<script type="text/javascript" src="javascripts/jquery.query-2.1.7.js"></script>
 <script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
 <script type="text/javascript" src="javascripts/swfobject.js"></script>
 <script type="text/javascript">
@@ -32,7 +33,42 @@
           cursor: 'default',
           'list-style-image':'none'
         });
+
+		showContent();
+		
 		$(document).pngFix();
+		
+		function showContent(){
+			var id = $.query.get('id');
+			var container = '#news_container';
+			var tag = 'item';
+			
+			$.ajax({
+				url:'/xml/'+id+'.xml',
+				type:'GET',
+				dataType:'xml',
+				timeout:1000,
+				error:function(){alert('获取数据失败,您请求的资源不存在.');history.back();},
+				success:function(xml){
+					//no list item found
+					if ($(xml).find(tag).length == 0){
+						$(container).html('暂无内容.');
+						return;
+					}
+					
+					var str = '<div class="newstitle"><a class="corange">{title}</a></div><div class="blank12"></div>{content}<div class="blank6"></div>';
+					var title = $(xml).find(tag).children('title').text();
+					var cat_id = $(xml).find(tag).children('category').text();
+					var content = $(xml).find(tag).children('content').text();
+					
+					// write content
+					$(container).html(str.replace('{title}',title).replace('{content}',content));
+					
+					// hl category
+					$('.nav1 #cat'+cat_id).attr('class','current').find('a').text('返回新闻列表');
+				}
+			});
+		}
       });
     </script>
 </head>
@@ -61,29 +97,17 @@
       <div class="location"> <span><strong>您的位置</strong></span>
         <div class="blank6"></div>
         <span class=" locspan01a">新闻中心</span> <span class="locspan02b">公司新闻</span><span class="locspan03a">新闻内容</span><div class="fhsy"> <a href="intro.html">返回首页</a></div></div>
-      <div class="content">
-        <div class="newstitle"><a class="corange">新闻标题新闻标题</a></div>
+      <div class="content" id="news_container">
+        <div class="newstitle"><a class="corange"></a></div>
         <div class="blank12"></div>
-        <span>
-        <p >新闻内容新闻内容上海东方传媒集团有限公司控股子公司。</p>
-        <p> 2004年10月成立，是国家广电总局颁发的国家动漫产业基地，也是全国唯一一家拥有完整动漫产业链、具备国际化竞争条件的动漫企业。</p>
-        <p>炫动传播以原创动漫为核心、媒体运营为特色、产业经营为驱动，拥有“原创动漫投资中心”、“媒体运营中心”和“产业中心”三大业务板
-          块。公司致力于通过动漫全产业链的建设和拓展，加强原创动漫内容开发和制作，提升媒体节目品牌及影响，扩大衍生业务规模和种类，进一步完
-          善产业链增強整体盈利水平。</p>
-        <p>炫动传播将不断凭借自身品牌优势、经营团队优势、媒体合作优势，以及全产业链的经营模式优势，面向国内、国际两个市场，通过产业链的
-          扩张和结构升级，增进自主创新能力、提升核心竞争力，朝着具有独特精品资源的内容提供商、领先技术优势的内容制作商、产业集群发展的平台
-          运营商三个方向发展，努力实现“国内领先、国际影响，并具有完整产业链的创新型动漫企业”的目标，成为国内领先的动漫骨干企业，国际知名
-          的华语动漫企业，与世界分享中国文化。</p>
-        <p> 运营商三个方向发展，努力实现“国内领先、国际影响，并具有完整产业链的创新型动漫企业”的目标，成为国内领先的动漫骨干企业，国际知名
-          的华语动漫企业，与世界分享中国文化。</p>
-        </span>
+        <span><p></p></span>
         <div class="blank6"></div>
       </div>
       <div class="nav1">
         <ul>
-          <li class="current"><a href="news.html">返回公司新闻</a></li>
-          <li><a>产品新闻</a></li>
-          <li><a>媒体报道</a></li>
+          <li id="cat1"><a href="news.html?category_id=1">公司新闻</a></li>
+          <li id="cat2"><a href="news.html?category_id=2">产品新闻</a></li>
+          <li id="cat3"><a href="news.html?category_id=3">媒体报道</a></li>
         </ul>
       </div>
       <div class="blank6"></div>
