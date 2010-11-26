@@ -38,7 +38,7 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .nav a {font-family:"微软雅黑";  font-size:14px; color:#999999; font-weight:bold; line-height:29px; text-decoration:none; width:80px; height:29px; display:block; }
 .nav a:hover {font-family:"微软雅黑";  font-size:14px; color:#999999; font-weight:bold; line-height:29px; background-color:#fff; width:80px; height:29px; }
 .location{ width:69px; margin:20px 25px 0 30px; float:left; display:inline; font-family:"微软雅黑"; }
-.location a{ line-height:26px;}
+.location a{color:#999999;text-decoration:none;text-align:center;display:block;}
 .location span{ display:block; margin-bottom:2px;}
 .locspan01a{ width:62px; height:16px; background:url(../images/01a.jpg) no-repeat; padding:8px 0 16px 7px; }
 .locspan01b{ width:62px; height:16px; background:url(../images/01b.jpg) no-repeat; padding:8px 0 16px 7px;   }
@@ -82,8 +82,8 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .news { margin-bottom:25px; }
 .news ul { width:631px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
 .news li { line-height:30px; }
-.news a {font-family:"微软雅黑";  font-size:12px; color:#999999; text-decoration:none; padding-left:10px; }
-.news a:hover {font-family:"微软雅黑";   font-size:12px; color:#f39800; padding-left:10px; }
+.news a {font-family:"微软雅黑"; color:#999999; text-decoration:none; padding-left:10px; }
+.news a:hover {font-family:"微软雅黑";  color:#f39800; padding-left:10px; }
 .newstitle { padding-bottom:10px; }
 .businesstt { line-height:26px; font-weight:bold; color:#808080; font-size:13px; font-family:"微软雅黑" }
 .businesstt1 { line-height:20px; background:url(../images/bg01.jpg) no-repeat; color:#FFF; font-weight:bold; width:80px; text-align:center; margin-bottom:2px; }
@@ -119,3 +119,6 @@ DIV.yellow A:hover { border:#e6e6e6 1px solid; color:#999; }
 DIV.yellow A:active { border:#e6e6e6 1px solid; color:#999; }
 DIV.yellow SPAN.current { BACKGROUND-COLOR: #999; border: #999 1px solid; padding:1px 5px 1px 5px; margin:2px; font-weight:bold; color:#FFF; }
 DIV.yellow SPAN.disabled { border:#f5f5f5 1px solid; padding:1px 5px 1px 5px; margin:2px; color:#e6e6e6; }
+
+.content {font-size:14px;}
+.hide {display:none;}
