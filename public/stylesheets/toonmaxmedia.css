@@ -58,7 +58,7 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .content { width:631px; margin:20px 70px 0 0px; float:left; display:inline; }
 .content p { margin:0 0 6px 0; line-height:22px; text-indent:24px; }
 .contentp01 { text-indent:0px; line-height:22px; margin-bottom:4px; }
-.content01 { width:780px; height:311px; margin:0px auto 0 auto; margin-top:40px; background:url(../images/invitebg.jpg) no-repeat; padding:30px 25px 0 25px; }
+.content01 { width:780px; height:362px; margin:0px auto 0 auto; margin-top:40px; background:url(../images/invitebg1.jpg) no-repeat; padding:68px 20px 0 30px; }
 .content01 p { margin:0 0 6px 0; line-height:32px; color:#808080; text-indent:36px; font-family:"微软雅黑"; font-size:16px; }
 .content01a { width:93px; height:24px; background:url(../images/invite1.jpg) no-repeat 0 1px; text-align:center; color:#FFF; line-height:28px; padding:2px 8px 2px 5px; margin-left:4px; margin-right:3px; }
 .content02 { width:750px; margin:20px 70px 0 0px; float:left; display:inline; }
