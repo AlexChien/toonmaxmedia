@@ -99,7 +99,7 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .businesstt5a { width:300px; line-height:26px; font-weight:bold; color:#808080; font-size:14px; font-family:"微软雅黑"; background:url(../images/xdlogo-1.jpg) no-repeat 160px 2px; }
 .businesstt5b { width:300px; line-height:26px; font-weight:bold; color:#808080; font-size:14px; font-family:"微软雅黑"; background:url(../images/haha-1.jpg) no-repeat 165px 2px; }
 .works { clear:both; }
-.img { width:150px; margin:0 0px 0 0; float:left; }
+.img { width:165px; margin:0 0px 0 0; float:left; }
 .jiantou { background:url(../images/works1a.jpg) no-repeat 5px 23px; width:25px; height:186px; float:left; }
 .introduce { width:456px; float:left; margin-top:10px; }
 .introduce img { border:0px; margin:0px; padding:0px; }
@@ -130,7 +130,7 @@ DIV.yellow SPAN.disabled { border:#f5f5f5 1px solid; padding:1px 5px 1px 5px; ma
 .content img { padding:0px; }
 .hide { display:none; }
 .picadd01 { float:left;border:0; margin-right:10px;}
-.picadd { float:right;border:0; margin-left:10px; }
+.picadd { float:right;border:0; margin-left:10px;}
 
 /*12.9修改*/
 .content_new { width:680px; margin:20px 70px 0 50px; float:left; display:inline; font-size:14px; }
@@ -147,3 +147,8 @@ DIV.yellow SPAN.disabled { border:#f5f5f5 1px solid; padding:1px 5px 1px 5px; ma
 .content02_new img { margin:0px 10px 0 10px; }
 .cooper { width:175px; height:31px; background:url(../images/coo_bg.jpg) no-repeat; text-align:center; padding-top:9px; margin:12px 0 0 10px; float:right; text-align:center;}
 .cooper a { color:#f39800; font-size:12px; font-weight:bold;}
+/*12.14*/
+.content_intro { width:680px; height:480px; margin:20px 70px 0 50px; float:left; display:inline; font-size:14px; background:url(../images/img12.jpg) no-repeat 0 250px;}
+.content_intro p { margin:0 0 6px 0; line-height:22px; text-indent:24px; }
+.bottom_intro { width:910px; text-align:left;bottom:0; border-top:#cacaca 1px solid; margin-bottom:20px; margin-left:auto; margin-right:auto; }
+
