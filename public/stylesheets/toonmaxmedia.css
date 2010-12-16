@@ -9,6 +9,7 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .blank12 { margin:0 auto; width:100%; height:12px; font-size:1px; line-height:1px; clear:both }
 .blank20 { margin:0 auto; width:100%; height:20px; font-size:1px; line-height:1px; clear:both }
 .blank30 { margin:0 auto; width:100%; height:30px; font-size:1px; line-height:1px; clear:both }
+.blank50 { margin:0 auto; width:100%; height:50px; font-size:1px; line-height:1px; clear:both }
 .corange { font-family:"微软雅黑"; font-size:20px; color:#f39800; font-weight:bold; }
 .corange1 { font-family:"微软雅黑"; font-size:14px; color:#f39800; }
 .corange2 { font-family:"微软雅黑"; font-size:12px; color:#f39800; padding:2px; background: #f3f3f3; }
@@ -58,7 +59,7 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .content { width:631px; margin:20px 70px 0 0px; float:left; display:inline; }
 .content p { margin:0 0 6px 0; line-height:22px; text-indent:24px; }
 .contentp01 { text-indent:0px; line-height:22px; margin-bottom:4px; }
-.content01 { width:780px; height:362px; margin:0px auto 0 auto; margin-top:40px; background:url(../images/invitebg1.jpg) no-repeat; padding:68px 20px 0 30px; }
+.content01 { width:780px; height:362px; margin:0px auto 0 auto; margin-top:40px; background:url(../images/invitebg1.jpg) no-repeat; padding:52px 20px 0 30px; }
 .content01 p { margin:0 0 6px 0; line-height:32px; color:#808080; text-indent:36px; font-family:"微软雅黑"; font-size:16px; }
 .content01a { width:93px; height:24px; background:url(../images/invite1.jpg) no-repeat 0 1px; text-align:center; color:#FFF; line-height:28px; padding:2px 8px 2px 5px; margin-left:4px; margin-right:3px; }
 .content02 { width:750px; margin:20px 70px 0 0px; float:left; display:inline; }
@@ -96,8 +97,8 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .businesstt3 { line-height:26px; font-weight:bold; color:#f39800; font-size:13px; }
 .businesstt4 { line-height:24px; color:#808080; font-size:13px; font-family:"微软雅黑"; background:url(../images/fhsy1.jpg) no-repeat 0 8px; padding-left:15px; margin:8px 0 8px 0; }
 .businesstt5 { line-height:26px; font-weight:bold; color:#808080; font-size:14px; font-family:"微软雅黑" }
-.businesstt5a { width:300px; line-height:26px; font-weight:bold; color:#808080; font-size:14px; font-family:"微软雅黑"; background:url(../images/xdlogo-1.jpg) no-repeat 160px 2px; }
-.businesstt5b { width:300px; line-height:26px; font-weight:bold; color:#808080; font-size:14px; font-family:"微软雅黑"; background:url(../images/haha-1.jpg) no-repeat 165px 2px; }
+.businesstt5a { width:300px; line-height:26px; font-weight:bold; color:#808080; font-size:14px; font-family:"微软雅黑"; background:url(../images/xdlogo-1.jpg) no-repeat 0px 2px; padding-left:65px; }
+.businesstt5b { width:300px; line-height:26px; font-weight:bold; color:#808080; font-size:14px; font-family:"微软雅黑"; background:url(../images/haha-1.jpg) no-repeat 0px 2px; padding-left:50px;}
 .works { clear:both; }
 .img { width:165px; margin:0 0px 0 0; float:left; }
 .jiantou { background:url(../images/works1a.jpg) no-repeat 5px 23px; width:25px; height:186px; float:left; }
