@@ -66,18 +66,19 @@
 						var wrapped_content = '';
 						var cursor = 0;
 						var symbols = "！，。“”（）【】《》.,!''";
-						for(var i=0;i<content.length;i++) {
-							var char = content.charAt(cursor);
-							if (i % 60 == 0 && i > 0 && cursor<=i) {
-								if (symbols.indexOf(content.charAt(cursor)) != -1) {
-									char = content.charAt(cursor);
-								} else {
-									char = "<br />&nbsp;&nbsp;&nbsp;&nbsp;"+char;
-								}
-							}
-							cursor++;
-							wrapped_content += char;
-						}
+						// for(var i=0;i<content.length;i++) {
+						// 	var char = content.charAt(cursor);
+						// 	if (i % 60 == 0 && i > 0 && cursor<=i) {
+						// 		if (symbols.indexOf(content.charAt(cursor)) != -1) {
+						// 			char = content.charAt(cursor);
+						// 		} else {
+						// 			char = "<br />&nbsp;&nbsp;&nbsp;&nbsp;"+char;
+						// 		}
+						// 	}
+						// 	cursor++;
+						// 	wrapped_content += char;
+						// }
+						wrapped_content = content;
 						str += '<li><a href="/news_content.html?id='+$(this).attr('id')+'">'+wrapped_content+'</a></li>';
 					});
 					str += '</ul>';
