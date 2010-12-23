@@ -154,3 +154,7 @@ DIV.yellow SPAN.disabled { border:#f5f5f5 1px solid; padding:1px 5px 1px 5px; ma
 .bottom_intro { width:910px; text-align:left;bottom:0; border-top:#cacaca 1px solid; margin-bottom:20px; margin-left:auto; margin-right:auto; }
 /*12.21*/
 .contentp01a { text-indent:0px; line-height:22px; margin-bottom:4px; float:left; margin-top:15px; margin-left:10px; width:550px;}
+
+.newsImage {padding:4px; border:1px solid #cccccc;}
+.lImage {margin-right:10px; margin-bottom:10px;}
+.cImage {clear:both; margin:auto;}
