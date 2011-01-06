@@ -1,47 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
+	<item id="12">
+		<category>1</category>
+		<title>大电影《喜羊羊与灰太狼III》2011新春全国公映</title>
+		<weight>120</weight>
+	</item>
 	<item id="1">
 		<category>1</category>
 		<title>大电影《喜羊羊灰太狼之虎虎生威》票房过亿</title>
+		<weight>110</weight>
 	</item>
 	<item id="2">
 		<category>1</category>
 		<title>2010哈哈美丽心世界——爱，让未来更美好！</title>
+		<weight>100</weight>
 	</item>
 	<item id="3">
 		<category>1</category>
 		<title>2010 CCG EXPO——打造中国动漫产业风云盛会</title>
+		<weight>90</weight>
 	</item>
 	<item id="4">
 		<category>1</category>
 		<title>尝试跨界合作 运营动漫刊物</title>
+		<weight>80</weight>
 	</item>
 	<item id="5">
 		<category>1</category>
 		<title>哈哈荧屏夏令营：一年一度的快乐体验！</title>
+		<weight>70</weight>
 	</item>
 	<item id="6">
 		<category>1</category>
 		<title>《七小罗汉》树国产儿童电影新标杆</title>
+		<weight>60</weight>
 	</item>
 	<item id="7">
 		<category>1</category>
 		<title>炫动卡通卫视全国覆盖步伐加速 外地已达9省18市</title>
+		<weight>50</weight>
 	</item>
 	<item id="8">
 		<category>1</category>
 		<title>《解放日报》2010年8月12日头版头条：聚焦“炫动传播”文化体制改革</title>
+		<weight>40</weight>
 	</item>
 	<item id="9">
 		<category>1</category>
 		<title>文化部2010年8月20日发文：“中国国际动漫游戏博览会暨2010卡通总动员 探索文化会展资源整合新模式”</title>
+		<weight>30</weight>
 	</item>
 	<item id="10">
 		<category>1</category>
 		<title>三维动画电影《世博总动员》献礼世博</title>
+		<weight>20</weight>
 	</item>
 	<item id="11">
 		<category>1</category>
 		<title>《光明日报》2010年9月8日刊发报道：“炫动传播：让动漫产业动起来”</title>
+		<weight>10</weight>
 	</item>
 </data>
