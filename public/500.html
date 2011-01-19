@@ -1,30 +1,132 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>We're sorry, but something went wrong (500)</title>
-	<style type="text/css">
-		body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-		div.dialog {
-			width: 25em;
-			padding: 0 4em;
-			margin: 4em auto 0 auto;
-			border: 1px solid #ccc;
-			border-right-color: #999;
-			border-bottom-color: #999;
-		}
-		h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
-	</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>炫动传播 toonmaxmedia</title>
+<link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
+<script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
+<script type="text/javascript" src="javascripts/swfobject.js"></script>
+<script type="text/javascript">
+      $(function(){
+        $('li:has(ul)')
+          .click(function(event){
+            if (this == event.target) {
+              if ($(this).children().is(':hidden')) {
+                $(this)
+                  .css('list-style-image','url(images/toonmaxmedia5.jpg)')
+                  .children().slideDown();
+              }
+              else {
+                $(this)
+                  .css('list-style-image','url(images/toonmaxmedia4.jpg)')
+                  .children().slideUp();
+              }
+            }
+            return false;
+          })
+          .css({cursor:'pointer',
+                'list-style-image':'url(images/toonmaxmedia4.jpg)'})
+          .children().hide();
+        $('li:not(:has(ul))').css({
+          cursor: 'default',
+          'list-style-image':'none'
+        });
+		$(document).pngFix();
+      });
+    </script>
 </head>
-
 <body>
-  <!-- This file lives in public/500.html -->
-  <div class="dialog">
-    <h1>We're sorry, but something went wrong.</h1>
-    <p>We've been notified about this issue and we'll take a look at it shortly.</p>
+<div id="wrap">
+  <div id="main" class="clearfix">
+    <div id="smglogo"><a href="http://www.smg.cn" target="_blank"><img src="images/smglogo.jpg" /></a></div>
+    <div class="toonmaxmedia">
+      <div class="header">
+        <div class="logo"><a href="/"><img src="images/logo.jpg" border="0" /></a></div>
+        <div class="nav" id="nav">
+          <ul>
+            <li ><a href="intro.html">公司介绍</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="business.html">主营业务</a></li>
+            <li class="current"><a>公司作品</a></li>
+            <li><a href="#">投资者关系</a></li>
+            <li><a href="#">合作伙伴</a></li>
+            <li><a href="invite.html">招贤纳士</a></li>
+            <div class="blank0"></div>
+          </ul>
+        </div>
+        <div class="blank0"></div>
+      </div>
+        <script type="text/javascript" charset="utf-8">var fl = new SWFObject("/flash/nav.swf", "fl", 613, 245, "8");fl.addParam("quality","high");fl.addParam("allowScriptAccess","always");fl.addParam("wmode","transparent");fl.addVariable("cur_sec", document.location.href.split('/').pop().split('.')[0].split('_')[0]);fl.write("nav");</script>
+      <!--<div class="location"> <span><strong>您的位置</strong></span>
+        <div class="blank6"></div><span class=" locspan00a"><a href="/">首  页</a></span>
+        <span class=" locspan01a"><a href="works.html">公司作品</a></span> <span class="locspan02a"><a href="works_radio.html">广播频率</a></span> </div>-->
+      <div class="content_new">
+        <div class="businesstt3"><a class="hui03">上海交通广播</a>（FM105.7  AM648）</div>
+        <div class="blank6"></div>
+        <img class="picadd02" src="images/ridio01.jpg" />
+        <p style="margin-top:10px;">中国本土第一家以播报交通信息为主导的专业交通广播媒体，全天播报及时准确的路况信息、提供专业贴近的交通服务，成为市民耳边的“移动出行指南”。</p>
+        <div class=" blank30"></div>
+        <div class="businesstt3"><a class="hui03">东方都市广播</a>（FM89.9  AM792）</div>
+        <div class="blank6"></div>
+        <img class="picadd02" src="images/ridio02.jpg" />
+        <p>中国国内第一家引入听众电话参与、24小时直播的广播媒体，在长三角乃至华东地区影响深远，曾在中国广播业界刮起“东方旋风”。以生活服务为主干，休闲娱乐为补充，倡导“快乐生活、有味生活”。</p>
+        <div class="blank30"></div>
+        <div class="businesstt3"><a class="hui03">动感101</a>（FM101.7）</div>
+        <div class="blank6"></div>
+        <img class="picadd02" src="images/ridio03.jpg" />
+        <p style="margin-top:10px;">上海收听率最高的专业音乐电台，全国音乐广播综合实力第一，全亚洲顶尖的华语音乐电台，播放时下最流行的劲歌金曲，介绍最新鲜的娱乐资讯和明星动向。</p>
+        <div class="blank30"></div>
+        <div class="businesstt3"><a class="hui03">LOVE RADIO</a>（FM103.7）</div>
+        <div class="blank6"></div>
+        <img class="picadd02" src="images/ridio04.jpg" />
+        <p style="margin-top:10px;">上海本地最早的音乐电台，也是上海唯一一家24小时音乐电台，倡导优质音乐慢生活，关注都市人的生活需要和内心满足，激发都市人的音乐热情。</p>
+        <div class="blank30"></div>
+        <div class="businesstt3"><a class="hui03">经典947</a>（FM94.7）</div>
+        <div class="blank6"></div>
+        <img class="picadd02" src="images/ridio05.jpg" />
+        <p style="margin-top:10px;">中国内地唯一一套专业经典音乐广播频率，以追求经典，把握时尚为宗旨，引领受众走进经典音乐的殿堂。</p>
+        <div class="blank30"></div>
+        <div class="businesstt3"><a class="hui03">戏剧曲艺广播</a>（FM97.2  AM1197）</div>
+        <div class="blank6"></div>
+        <img class="picadd02" src="images/ridio06.jpg" />
+        <p style="margin-top:10px;">全国第一家专业戏曲广播，也是沪上独有的以方言播音为主的广播频率，致力于传承数百年传统文化，弘扬民族戏曲艺术，以现代理念和活力呈现给广大听众。</p>
+        <div class="blank30"></div>
+        <div class="businesstt3"><a class="hui03">上海故事广播</a>（FM107.2）</div>
+        <div class="blank6"></div>
+        <img class="picadd02" src="images/ridio07.jpg" />
+        <p style="margin-top:10px;">沪上首个以“故事立台”的专业广播频率，在众多广播频率中独树一帜，吸引了众多的“故事迷”。</p>
+        <div class="blank6"></div>
+      </div>
+      <div class="content_right_a">
+      <div class="righttop"><a>公司作品</a></div>
+      <div class="content_right">
+      <div class="nav1">
+        <ul>
+          <li ><a href="works.html">电影作品</a></li>
+          <li><a>电视作品</a></li>
+          <li class="current"><a>广播频率</a></li>
+          <li><a href="works_property_zzcp.html">衍生产品</a></li>
+          <li><a href="works_property_hz.html">会展</a></li>
+          <li><a href="works_property_cbw.html">出版</a></li>
+        </ul>
+      </div>
+      <div class="index"><a href="/">返回首页</a></div>
+      </div>
+      </div>
+      <div class="blank6"></div>
+    </div>
   </div>
+</div>
+<div id="footer">
+  <div class="bottom">
+    <div class="blank6"></div>
+    <div class="bottom01">Copyright © 2004-2010 Toonmax Media Co.,Ltd. All Rights Reserved <br/>
+      上海炫动传播股份有限公司 版权所有<br/>
+      <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
+    <div class="bottom02"><a href="contact.html">联系我们</a><br/>
+      <a href="copyright.html">版权声明</a></div>
+  </div>
+</div>
 </body>
 </html>
