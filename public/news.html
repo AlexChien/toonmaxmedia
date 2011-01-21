@@ -63,23 +63,19 @@
 					// found list items
 					$(xml).find(tag).each(function(item){
 						var content = $(this).children('title').text();
+						var newsdate = $(this).children('newsdate').text();
+						var curDate = new Date();
+						if ((curDate.getFullYear() == Number(newsdate.split('-')[0]) && curDate.getMonth()+1) == Number(newsdate.split('-')[1])){
+							newsdate = '近 日';
+						}
 						var wrapped_content = '';
 						var cursor = 0;
 						var symbols = "！，。“”（）【】《》.,!''";
-						// for(var i=0;i<content.length;i++) {
-						// 	var char = content.charAt(cursor);
-						// 	if (i % 60 == 0 && i > 0 && cursor<=i) {
-						// 		if (symbols.indexOf(content.charAt(cursor)) != -1) {
-						// 			char = content.charAt(cursor);
-						// 		} else {
-						// 			char = "<br />&nbsp;&nbsp;&nbsp;&nbsp;"+char;
-						// 		}
-						// 	}
-						// 	cursor++;
-						// 	wrapped_content += char;
-						// }
 						wrapped_content = content;
-						str += '<li><a href="/news_content.html?id='+$(this).attr('id')+'">'+wrapped_content+'</a></li>';
+						str += '<li><span class="newsspan01"><a href="/news_content.html?id='+$(this).attr('id')+'">'+wrapped_content+'</a></span>';
+						str += '<span class="newsspan02">'+newsdate+'</span>';
+						str += '<span class="newsspan03"><img src="images/n_time.jpg"></span><span class="blank0"></span>';
+						str += '</li>';
 					});
 					str += '</ul>';
 				

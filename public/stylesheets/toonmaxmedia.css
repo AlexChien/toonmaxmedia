@@ -184,7 +184,7 @@ DIV.yellow SPAN.disabled { border:#f5f5f5 1px solid; padding:1px 5px 1px 5px; ma
 .investor_content p { margin:0 0 10px 0; line-height:22px; }
 
 
-.newsImage { width:600px; height:380px; background:url(../images/n_imgbg.jpg) 0 320px no-repeat; clear:both; margin:auto; padding-top:10px;}
+.newsImage { /*width:600px; height:380px; */background:url(../images/n_imgbg.jpg) 0 320px no-repeat; clear:both; margin:auto; padding-top:10px;}
 .lImage {margin-right:10px; margin-bottom:10px;}
 .cImage {clear:both; margin:auto;}
 
