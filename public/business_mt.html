@@ -4,37 +4,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>炫动传播 toonmaxmedia</title>
 <link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
+
 <script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
 <script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
 <script type="text/javascript" src="javascripts/swfobject.js"></script>
 <script type="text/javascript">
-      $(function(){
-        $('li:has(ul)')
-          .click(function(event){
-            if (this == event.target) {
-              if ($(this).children().is(':hidden')) {
-                $(this)
-                  .css('list-style-image','url(images/toonmaxmedia5.jpg)')
-                  .children().slideDown();
-              }
-              else {
-                $(this)
-                  .css('list-style-image','url(images/toonmaxmedia4.jpg)')
-                  .children().slideUp();
-              }
-            }
-            return false;
-          })
-          .css({cursor:'pointer',
-                'list-style-image':'url(images/toonmaxmedia4.jpg)'})
-          .children().hide();
-        $('li:not(:has(ul))').css({
-          cursor: 'default',
-          'list-style-image':'none'
-        });
-		$(document).pngFix();
-      });
-    </script>
+<!--
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
 </head>
 <body>
 <div id="wrap">
@@ -78,7 +62,12 @@
             <ul>
               <li><a href="business.html">原创动漫投资</a></li>
               <li class="current01"><a>媒体运营</a></li>
-              <li class="nav2"><a href="business_mt_tv.html" >电视 </a></li>
+              <li class="nav2"><a href="business_mt_tv.html" title="">电视<span><img src="images/a1.gif" border="0" usemap="#Map">
+                    <map name="Map" id="Map">
+                      <area shape="rect" coords="2,4,58,41" href="business_mt_tv.html" />
+                    </map>
+              </span></a></li> 
+           
               <li class="nav2"><a  href="business_mt_radio.html">广播 </a></li>
               <div class="nav2a"></div>
               <li><a href="business_cy.html">产业经营</a></li>
@@ -100,5 +89,6 @@
       <a href="copyright.html">版权声明</a></div>
   </div>
 </div>
+
 </body>
 </html>
