@@ -62,7 +62,7 @@
 					var cat_id = $(xml).find(tag).children('category').text();
 					var content = $(xml).find(tag).children('content').text();
 					var newsdate = $(xml).find(tag).children('newsdate').text();
-					var source = $(xml).find(tag).children('source').length>0 ? $(xml).find(tag).children('source').text() : "炫动传媒";
+					var source = $(xml).find(tag).children('source').length>0 ? $(xml).find(tag).children('source').text() : "炫动传播";
 					
 					// write content
 					$(container).html(str.replace('{title}',title).replace('{content}',content).replace('{newsdate}',newsdate).replace('{source}',source));
