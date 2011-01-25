@@ -121,7 +121,7 @@ body, div, ul, li, form, table, ol, dl, dt, dd { margin:0px; padding:0px; list-s
 .works { clear:both; }
 .img { width:165px; margin:0 0px 0 0; float:left; }
 .jiantou { background:url(../images/works1a.jpg) no-repeat 5px 23px; width:25px; height:186px; float:left; }
-.introduce { width:456px; float:left; margin-top:10px; }
+.introduce { /*width:456px;*/width:486px; float:left; margin-top:10px; }
 .introduce img { border:0px; margin:0px; padding:0px; }
 .introduce01 { padding:15px 20px 6px 20px; background:#f3f3f3; }
 .contact { font-family:"微软雅黑"; font-size:16px; color:#999999; background:url(../images/contact1.jpg) no-repeat; padding-left:36px; }
