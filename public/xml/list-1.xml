@@ -6,29 +6,23 @@
 		<newsdate>2011-01-21</newsdate>
 		<weight>130</weight>
 	</item>
-	<item id="12">
-		<category>1</category>
-		<title>大电影《喜羊羊与灰太狼III》2011新春全国公映</title>
-		<newsdate>2011-01-10</newsdate>
-		<weight>120</weight>
-	</item>
 	<item id="1">
 		<category>1</category>
 		<title>《喜羊羊灰太狼之虎虎生威》完美收官 票房过亿</title>
 		<newsdate>2010-02-10</newsdate>
 		<weight>110</weight>
 	</item>
-	<item id="2">
-		<category>1</category>
-		<title>“2010哈哈美丽心世界”六一特别活动在世博园举行</title>
-		<newsdate>2010-06-02</newsdate>
-		<weight>100</weight>
-	</item>
 	<item id="3">
 		<category>1</category>
 		<title>第六届中国国际动漫游戏博览会今日在沪盛大开幕</title>
 		<newsdate>2010-07-09</newsdate>
 		<weight>90</weight>
+	</item>
+	<item id="2">
+		<category>1</category>
+		<title>“2010哈哈美丽心世界”六一特别活动在世博园举行</title>
+		<newsdate>2010-06-02</newsdate>
+		<weight>100</weight>
 	</item>
 	<item id="4">
 		<category>1</category>
@@ -63,7 +57,7 @@
 	<item id="9">
 		<category>1</category>
 		<title>文化部：2010 CCG EXPO 探索文化会展资源整合新模式</title>
-		<newsdate>2010-08-20</newsdate>
+		<newsdate>2010-08-12</newsdate>
 		<weight>30</weight>
 	</item>
 	<item id="10">
