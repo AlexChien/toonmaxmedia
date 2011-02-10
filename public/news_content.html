@@ -34,6 +34,7 @@
           'list-style-image':'none'
         });
 
+		var news = [];
 		showContent();
 		
 		$(document).pngFix();
@@ -56,23 +57,70 @@
 						return;
 					}
 					
-					var str = '<div class="newstitle"><a class="corange">{title}</a></div><div class="blank12"></div>{content}<div class="blank6"></div>';
+					var str = '<div class="newstitle"><a class="corange">{title}</a></div><div class="newstitle01"><a>来源：{source}</a><a>发布时间：{newsdate}</a></div><div class="blank12"></div>{content}<div class="blank6"></div>';
 					var title = $(xml).find(tag).children('title').text();
 					var cat_id = $(xml).find(tag).children('category').text();
 					var content = $(xml).find(tag).children('content').text();
+					var newsdate = $(xml).find(tag).children('newsdate').text();
+					var source = $(xml).find(tag).children('source').length>0 ? $(xml).find(tag).children('source').text() : "炫动传播";
 					
 					// write content
-					$(container).html(str.replace('{title}',title).replace('{content}',content));
+					$(container).html(str.replace('{title}',title).replace('{content}',content).replace('{newsdate}',newsdate).replace('{source}',source));
 					
 					// hl category
 					$('.nav1 #cat'+cat_id).attr('class','current').find('a').text('返回新闻列表');
+					
+					getNewsList($(xml).find(tag).children('category').text(),id);
 				}
 			});
+		}
+		
+		function getNewsList(cat_id,id){
+			var container = '#news_container';
+			var tag = 'item';
+			if (cat_id == null) cat_id = "1";
+						
+			$.ajax({
+				url:'/xml/list-'+cat_id+'.xml',
+				type:'GET',
+				dataType:'xml',
+				timeout:1000,
+				error:function(){alert('您请求的资源暂不可用，请稍后再试。');history.back();},
+				success:function(xml){
+					//no list item found
+					if ($(xml).find(tag).length == 0){
+						return;
+					}
+				
+					$(xml).find(tag).each(function(item){
+						var id = $(this).attr('id');
+						var content = $(this).children('title').text();
+						news.push({id:id,title:content});
+					});
+					showNewsNav(id);
+				}
+			});
+		}
+		
+		function showNewsNav(id){
+			var container = '#news_container';
+			var template = '<div class="newstitle02">上一篇：<a href="/news_content.html?id={prev_id}">{prev_title}</a></div><div class="newstitle03">下一篇：<a href="/news_content.html?id={next_id}">{next_title}</a></div>';
+			var prev = {};
+			var next = {};
+			var total = news.length;
+			for(var i=0;i<total;i++){
+				if (news[i].id == id){
+					prev = i > 0 ? news[i-1] : news[total-1];
+					next = i < total-1 ? news[i+1] : news[0];
+				}
+			}
+			
+			$(container).html($(container).html()+template.replace('{prev_id}',prev.id).replace('{prev_title}',prev.title).replace('{next_id}',next.id).replace('{next_title}',next.title));
 		}
       });
     </script>
 </head>
-<body>
+<body><a name="top"></a>
 <div id="wrap">
   <div id="main" class="clearfix">
     <div id="smglogo"><a href="http://www.smg.cn" target="_blank"><img src="images/smglogo.jpg" /></a></div>
@@ -127,7 +175,7 @@
   <div class="bottom">
     <div class="blank6"></div>
     <div class="bottom01">Copyright © 2004-2010 Toonmax Media Co.,Ltd. All Rights Reserved <br/>
-      上海炫动传播股份有限公司 版权所有 <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
+      上海炫动传播股份有限公司 上海炫动传播股份有限公司 <a href="/copyright.html">版权所有</a> <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
     <div class="bottom02"><a href="contact.html">联系我们</a><br/>
       <a href="copyright.html">版权声明</a></div>
   </div>
