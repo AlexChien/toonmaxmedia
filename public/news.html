@@ -60,6 +60,7 @@
 					}
 					
 					var str = '<ul>';
+					var i = 0;
 					// found list items
 					$(xml).find(tag).each(function(item){
 						var content = $(this).children('title').text();
@@ -72,7 +73,8 @@
 						var cursor = 0;
 						var symbols = "！，。“”（）【】《》.,!''";
 						wrapped_content = content;
-						str += '<li><span class="newsspan01"><a href="/news_content.html?id='+$(this).attr('id')+'">'+wrapped_content+'</a></span>';
+						var hl = i++ < 2 ? ' style="font-weight:bold;"' : '';
+						str += '<li><span class="newsspan01"'+hl+'><a href="/news_content.html?id='+$(this).attr('id')+'">'+wrapped_content+'</a></span>';
 						str += '<span class="newsspan02">'+newsdate+'</span>';
 						str += '<span class="newsspan03"><img src="images/n_time.jpg"></span><span class="blank0"></span>';
 						str += '</li>';
