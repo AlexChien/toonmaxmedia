@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
+	<item id="30">
+		<category>1</category>
+		<title>CCG EXPO圆满落幕 创全国同类会展多项之最</title>
+		<newsdate>2011-7-12</newsdate>
+		<weight>300</weight>
+	</item>
+	<item id="29">
+		<category>1</category>
+		<title>炫动城，中国动漫体验的多点式商业运作</title>
+		<newsdate>2011-7-10</newsdate>
+		<weight>290</weight>
+	</item>
+	<item id="28">
+		<category>1</category>
+		<title>CCG EXPO中国国际动漫游戏博览会7月登陆世博中国馆</title>
+		<newsdate>2011-6-29</newsdate>
+		<weight>280</weight>
+	</item>
+	<item id="27">
+		<category>1</category>
+		<title>炫动传播携手芝麻街打造《大鸟看世界》今夏亮相央视</title>
+		<newsdate>2011-6-24</newsdate>
+		<weight>270</weight>
+	</item>
+	<item id="26">
+		<category>1</category>
+		<title>《喜羊羊与灰太狼3》荣获上海影评人奖“年度十佳影片”</title>
+		<newsdate>2011-6-22</newsdate>
+		<weight>260</weight>
+	</item>
+	<item id="25">
+		<category>1</category>
+		<title>“艺恩电影产业奖”揭晓 《喜羊羊与灰太狼3》获殊荣</title>
+		<newsdate>2011-6-22</newsdate>
+		<weight>250</weight>
+	</item>
+	<item id="24">
+		<category>1</category>
+		<title>国内首部原创热血玄幻动画电影《魁拔》今夏出鞘</title>
+		<newsdate>2011-6-17</newsdate>
+		<weight>240</weight>
+	</item>
+	<item id="23">
+		<category>1</category>
+		<title>功夫喜剧电影《开心大冒险》亮相上海国际电影节</title>
+		<newsdate>2011-6-14</newsdate>
+		<weight>230</weight>
+	</item>
+	<item id="22">
+		<category>1</category>
+		<title>“炫动之夜”点亮浦江 “T计划”正式启动</title>
+		<newsdate>2011-6-9</newsdate>
+		<weight>220</weight>
+	</item>
+	<item id="21">
+		<category>1</category>
+		<title>炫动卡通落地长沙 炫动家族六一长沙闪客行</title>
+		<newsdate>2011-6-2</newsdate>
+		<weight>210</weight>
+	</item>
+	<item id="20">
+		<category>1</category>
+		<title>炫动传播携手腾讯娱乐《洛克王国》动画电影梦幻启动</title>
+		<newsdate>2011-6-2</newsdate>
+		<weight>200</weight>
+	</item>
+	<item id="19">
+		<category>1</category>
+		<title>2011哈哈美丽心世界大型儿童慈善活动爱心进行中</title>
+		<newsdate>2011-5-30</newsdate>
+		<weight>190</weight>
+	</item>
+	<item id="18">
+		<category>1</category>
+		<title>炫动传播盛装亮相第七届中国国际动漫节</title>
+		<newsdate>2011-5-5</newsdate>
+		<weight>180</weight>
+	</item>
+	<item id="17">
+		<category>1</category>
+		<title>国内首部大型实体遥控偶动画《噢咿噢—快乐唱歌岛》亮相中国国际动漫节</title>
+		<newsdate>2011-5-3</newsdate>
+		<weight>170</weight>
+	</item>
+	<item id="16">
+		<category>1</category>
+		<title>2010年度全国少儿节目精品以及国产动画精品奖揭晓  炫动传播荣膺大奖</title>
+		<newsdate>2011-4-26</newsdate>
+		<weight>160</weight>
+	</item>
+	<item id="15">
+		<category>1</category>
+		<title>中德联手打造动画梦幻之作 《劳拉的星星在中国》4月30日闪亮公映</title>
+		<newsdate>2011-4-25</newsdate>
+		<weight>150</weight>
+	</item>
+	<item id="14">
+		<category>1</category>
+		<title>炫动传播携手芝麻街打造全新节目《大鸟看世界》喜获银雨果奖</title>
+		<newsdate>2011-4-21</newsdate>
+		<weight>140</weight>
+	</item>
 	<item id="13">
 		<category>1</category>
 		<title>《喜羊羊与灰太狼之兔年顶呱呱》转战太空春节公映</title>
