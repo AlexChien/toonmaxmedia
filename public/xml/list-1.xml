@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
+	<item id="35">
+		<category>1</category>
+		<title>“炫动酷地带”登陆团中央未来网</title>
+		<newsdate>2011-11-07</newsdate>
+		<weight>350</weight>
+	</item>
+	<item id="34">
+		<category>1</category>
+		<title>炫动传播年度巨献《宇宙星神》隆重发布</title>
+		<newsdate>2011-10-31</newsdate>
+		<weight>340</weight>
+	</item>
+	<item id="33">
+		<category>1</category>
+		<title>中国动漫展东京落幕 炫动成功策展</title>
+		<newsdate>2011-10-28</newsdate>
+		<weight>330</weight>
+	</item>
+	
 	<item id="32">
 		<category>1</category>
 		<title>当红网游跃身银幕 《洛克王国》打造狂欢盛宴</title>
