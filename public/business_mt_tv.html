@@ -47,17 +47,25 @@
 			case 1:
 			document.getElementById("TabTab03Con1").style.display="block";
 			document.getElementById("TabTab03Con2").style.display="none";
+			document.getElementById("TabTab03Con3").style.display="none";
 
-			document.getElementById("font1").style.color="#ffffff";
-			document.getElementById("font2").style.color="#999999";
+
 
 			break;
 			case 2:
 			document.getElementById("TabTab03Con1").style.display="none";
 			document.getElementById("TabTab03Con2").style.display="block";
+			document.getElementById("TabTab03Con3").style.display="block";
 
-			document.getElementById("font1").style.color="#999999";
-			document.getElementById("font2").style.color="#ffffff";
+
+
+			break;
+				case 3:
+			document.getElementById("TabTab03Con1").style.display="none";
+			document.getElementById("TabTab03Con2").style.display="none";
+			document.getElementById("TabTab03Con3").style.display="block";
+
+
 
 			break;
 
@@ -66,7 +74,8 @@
 
 </script>
 </head>
-<body><a name="top"></a>
+<body>
+<a name="top"></a>
 <div id="wrap">
   <div id="main" class="clearfix">
     <div id="smglogo"><a href="http://www.smg.cn" target="_blank"><img src="images/smglogo.jpg" /></a></div>
@@ -88,7 +97,7 @@
         </div>
         <div class="blank0"></div>
       </div>
-      <script type="text/javascript" charset="utf-8">var fl = new SWFObject("/flash/nav.swf", "fl", 680, 245, "8");fl.addParam("quality","high");fl.addParam("allowScriptAccess","always");fl.addParam("wmode","transparent");fl.addVariable("cur_sec", document.location.href.split('/').pop().split('.')[0].split('_')[0]);fl.write("nav");</script>
+      <script type="text/javascript" charset="utf-8">var fl = new SWFObject("/flash/nav.swf?v=2", "fl", 680, 245, "8");fl.addParam("quality","high");fl.addParam("allowScriptAccess","always");fl.addParam("wmode","transparent");fl.addVariable("cur_sec", document.location.href.split('/').pop().split('.')[0].split('_')[0]);fl.write("nav");</script>
       <!--<div class="location"> <span><strong>您的位置</strong></span>
         <div class="blank6"></div><span class=" locspan00a"><a href="/">首  页</a></span>
         <span class=" locspan01a"><a href="business.html">主营业务</a></span> <span class="locspan02b"><a href="business_mt.html">媒体运营</a></span><span class="locspan03a"><a href="business_mt_tv.html">电 视</a></span></div>-->
@@ -97,6 +106,7 @@
           <div id="bg" class="xixi1a">
             <div id="font1" class="tab1a" onMouseOver="setTab03Syn(1);document.getElementById('bg').className='xixi1a'"></div>
             <div id="font2" class="tab2a" onMouseOver="setTab03Syn(2);document.getElementById('bg').className='xixi2a'"></div>
+            <div id="font2" class="tab3a" onMouseOver="setTab03Syn(3);document.getElementById('bg').className='xixi3a'"></div>
             <div class="blank0"></div>
           </div>
           <div id=TabTab03Con1>
@@ -143,6 +153,20 @@
           </div>
           <div style="border:0px;"><img src="images/img_05a.jpg" /></div>
         </div>
+        <div id=TabTab03Con3 style="display:none">
+          <div class="blank20"></div>
+          <div class="blank6"></div>
+          <div class="businesstt">卡通零距离 动漫无极限</div>
+          <div class="blank6"></div>
+          <div class="blank12"></div>
+          <div style="border:0px;"><img src="images/img_04b.jpg" /></div>
+          <div class="hahabrand_02">
+            <p>2003年获批开办的第一批全国数字付费电视频道之一。</p>
+            <p>以24小时不间断滚动播出动漫作品为频道特色。</p>
+            <p>全国覆盖284个区域，用户接近2000万。</p>
+          </div>
+          <div style="border:0px;"><img src="images/img_05b.jpg" /></div>
+        </div>
       </div>
       <div class="content_right_a">
         <div class="righttop"><a>主营业务</a></div>
@@ -164,13 +188,15 @@
     </div>
   </div>
 </div>
-<div id="footer"><!-- #BeginLibraryItem "/Library/footer.lbi" --><div class="bottom">
+<div id="footer"><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+  <div class="bottom">
     <div class="blank6"></div>
     <div style="position:absolute; left:95px; top:10px;"><a href="http://www.smg.cn" target="_blank"><img src="images/smglogo02.jpg"></a></div>
     <div class="bottom01">Copyright © 2004-2011 Toonmax Media Co.,Ltd. All Rights Reserved <br/>
       上海炫动传播股份有限公司 <a href="/copyright.html">版权所有</a> <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
     <div class="bottom02"><a href="contact.html">联系我们</a><br/>
       <a href="copyright.html">版权声明</a></div>
-  </div><!-- #EndLibraryItem --></div>
+  </div>
+  <!-- #EndLibraryItem --></div>
 </body>
 </html>
