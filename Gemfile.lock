@@ -11,6 +11,7 @@ GEM
     activeresource (2.3.8)
       activesupport (= 2.3.8)
     activesupport (2.3.8)
+    mysql (2.8.1)
     rack (1.1.2)
     rails (2.3.8)
       actionmailer (= 2.3.8)
@@ -25,4 +26,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mysql
   rails (= 2.3.8)
