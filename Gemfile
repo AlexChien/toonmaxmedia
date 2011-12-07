@@ -10,4 +10,5 @@ group :development, :test do
   # Deploy with Capistrano
   gem 'capistrano'
   gem 'capistrano-ext'
+  gem "capistrano_colors", "~> 0.5.5"
 end
