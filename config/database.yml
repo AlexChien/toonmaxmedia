@@ -7,12 +7,12 @@ setting: &setting
 
 development:
   <<: *setting
-  database: www_development
+  database: toonmaxmedia_development
 
 test:
   <<: *setting
-  database: www_test
+  database: toonmaxmedia_test
 
 production:
   <<: *setting
-  database: www_production
+  database: toonmaxmedia_production
