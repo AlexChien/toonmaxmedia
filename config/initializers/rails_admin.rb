@@ -10,7 +10,7 @@ RailsAdmin.config do |config|
   config.current_user_method { current_user } # auto-generated
 
   # Set the admin name here (optional second array element will appear in a beautiful RailsAdmin red ©)
-  config.main_app_name = ['Www', 'Admin']
+  config.main_app_name = ['炫动传播官方网站', '管理后台']
   # or for a dynamic name:
   # config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, controller.params['action'].titleize] }
 
