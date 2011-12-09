@@ -41,7 +41,7 @@ namespace :deploy do
     database_yml
     # asset_packager
     run "ln -s #{shared_path}/bundle #{current_release}/vendor/bundle"
-    # migrate
+    migrate
   end
 
   # add soft link script for deploy
