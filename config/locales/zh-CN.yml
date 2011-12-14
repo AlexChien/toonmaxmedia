@@ -1,0 +1,358 @@
+# Chinese (China) translations for Ruby on Rails
+# by tsechingho (http://github.com/tsechingho)
+
+"zh-CN":
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b%d日"
+      long: "%Y-%m-%d"
+      # long: "%Y年%b%d日"
+    day_names: [星期天, 星期一, 星期二, 星期三, 星期四, 星期五, 星期六]
+    abbr_day_names: [日, 一, 二, 三, 四, 五, 六]
+    month_names: [~, 一月, 二月, 三月, 四月, 五月, 六月, 七月, 八月, 九月, 十月, 十一月, 十二月]
+    abbr_month_names: [~, 1月, 2月, 3月, 4月, 5月, 6月, 7月, 8月, 9月, 10月, 11月, 12月]
+    order: [ :year, :month, :day ]
+
+  time:
+    formats:
+      default: "%Y年%b%d日 %A %H:%M:%S %Z"
+      short: "%b%d日 %H:%M"
+      long: "%Y年%b%d日 %H:%M"
+    am: "上午"
+    pm: "下午"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "半分钟"
+      less_than_x_seconds:
+        one: "一秒内"
+        other: "少于 %{count} 秒"
+      x_seconds:
+        one: "一秒"
+        other: "%{count} 秒"
+      less_than_x_minutes:
+        one: "一分钟"
+        other: "少于 %{count} 分钟"
+      x_minutes:
+        one: "一分钟前"
+        other: "%{count} 分钟"
+      about_x_hours:
+        one: "大约一小时"
+        other: "大约 %{count} 小时"
+      x_days:
+        one: "一天"
+        other: "%{count} 天"
+      about_x_months:
+        one: "大约一个月"
+        other: "大约 %{count} 个月"
+      x_months:
+        one: "一个月"
+        other: "%{count} 个月"
+      about_x_years:
+        one: "大约一年"
+        other: "大约 %{count} 年"
+      over_x_years:
+        one: "一年以上"
+        other: "%{count} 年以上"
+
+  number:
+    format:
+      separator: "."
+      delimiter: ","
+      precision: 3
+    currency:
+      format:
+        format: "%u %n"
+        unit: "CNY"
+        separator: "."
+        delimiter: ","
+        precision: 2
+    percentage:
+      format:
+        delimiter: ""
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+      storage_units:
+        #[Bytes, KB, MB, GB, TB]
+        # Storage units output formatting.
+        # %u is the storage unit, %n is the number (default: 2 MB)
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+
+  support:
+    array:
+      sentence_connector: "和"
+      skip_last_comma: true
+      words_connector: ", "
+      two_words_connector: " 和 "
+      last_word_connector: ", 和 "
+    select:
+      prompt: "请选择"
+      
+  activerecord:
+    errors:
+      full_messages:
+        format: "%{attribute} %{message}"
+      template:
+        header:
+          one: "有 1 个错误发生导致「%{model}」无法被保存。"
+          other: "有 %{count} 个错误发生导致「%{model}」无法被保存。"
+        body: "如下字段出现错误："
+      messages:
+        inclusion: "不包含于列表中"
+        exclusion: "是保留关键字"
+        invalid: "是无效的"
+        confirmation: "与确认值不匹配"
+        accepted: "必须是可被接受的"
+        empty: "不能留空"
+        blank: "不能为空字符"
+        too_long: "过长（最长为 %{count} 个字符）"
+        too_short: "過短（最短为 %{count} 个字符）"
+        wrong_length: "长度非法（必须为 %{count} 个字符）"
+        taken: "已经被使用"
+        not_a_number: "不是数字"
+        greater_than: "必须大于 %{count}"
+        greater_than_or_equal_to: "必须大于或等于 %{count}"
+        equal_to: "必须等于 %{count}"
+        less_than: "必须小于 %{count}"
+        less_than_or_equal_to: "必须小于或等于 %{count}"
+        odd: "必须为单数"
+        even: "必须为双数"
+
+    models:
+      category: "栏目分类"
+      story: "首页新闻"
+      user: "管理员"
+      template: "页面模版"
+      panel: "推荐位"
+      panel_content: "推荐内容"
+      page: "页面"
+      content: "内容"
+      upload: "资源"
+      role: "权限"
+
+    attributes:
+      panel:
+        panel_contents: "推荐内容"
+      panel_content:
+        is_published: "发布"
+        title: "文字标题"
+        link: "链接"
+        target: "窗口"
+        image: "图片"
+        panel: "所属推荐位"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+      category:
+        name: "分类名称"
+        parent: "父分类"
+        template: "页面模版"
+        panels: "本栏目分类下的推荐位"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+        children: "子分类"
+      story:
+        title_en: "标题(英文)"
+        title_zh_cn: "标题(中文)"
+        path: "访问url"
+        pubdate: "新闻时间"
+      user:
+        login: "用户名"
+        name: "昵称"
+        email: "电子邮箱"
+        password: "密码"
+        password_confirmation: "确认密码"
+        sign_in_count: "登陆次数"
+        current_sign_in_at: "当前登陆时间"
+        last_sign_in_at: "最后登陆时间"
+        current_sign_in_ip: "当前登陆ip"
+        last_sign_in_ip: "最后登陆ip"
+        failed_attempts: "错误尝试次数"
+        reset_password_sent_at: "密码重置发送时间"
+        confirmation_token: "帐号确认令牌"
+        confirmed_at: "帐号确认时间"
+        confirmation_sent_at: "确认时间" 
+        unlock_token: "帐号解锁令牌"
+        locked_at: "帐号解锁时间"
+        authentication_token: "认证令牌"
+        roles: "权限"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+      template:
+        name: "名称"
+        template: "模版"
+        categories: "应用本模版的栏目分类"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+      page:
+        title: "标题"
+        content: "内容"
+        image: "缩略图"
+        seo_keyword: "SEO 关键字"
+        seo_description: "SEO 描述"
+        template: "模版"
+        sub_category: "栏目"
+        children: "子页面"
+        contents: "内容"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+        is_published: "发布"
+      content:
+        title: "标题(中文)"
+        title_en: "标题(英文)"
+        page: "页面"
+        source: "来源(中文)"
+        source_en: "来源(英文)"
+        source_link: "自行填写链接url"
+        link_type: "链接类型"
+        issue_date: "发布日期"
+        uploads: "资源"
+        desc: "正文内容(中文)"
+        desc_en: "正文内容(英文)"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+      upload:
+        name: "名称"
+        file_type: "类型"
+        uploaded_data: "文件"
+        resource: "来源"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+      role:
+        name: "权限名"
+    
+  site_name: "哈哈资讯网站"
+  search_name: "搜索"
+  
+  home:
+    name: "首页"
+  views:
+    pagination:
+      previous: "&laquo; 上一页"
+      next: "下一页 &raquo;"
+      truncate: "…"
+  admin:
+    dashboard:
+      pagename: "网站管理"
+      name: "管理概览"
+      model_name: "模型名称"
+      last_used: "最后使用"
+      records: "记录"
+      modify: "修改"
+      add_new: "添加"
+      show: "查看"
+      ago: "以前"
+      navigation: "导航"
+    history:
+      user: "操作员"
+      changes: "变更记录"
+      name: "历史"
+      page_name: "%{name}的历史"
+      no_activity: "非激活"
+    show:
+      show_in_app: "在app中显示"
+      page_name: "%{name}的详细内容"
+      no_file_found: "没有找到文件"
+    credentials:
+      log_out: "登出"
+    index:
+      edit_action: "编辑"
+      delete_action: "删除"
+      select_action: "选择"
+      export_action: "导出当前页面"
+      show_action: "显示"
+      export_selected: "导出选择记录"
+      delete_selected: "删除已选择的"
+      add_new: "添加"
+      search: "搜索"
+      select: "%{name}编辑"
+      show_all: "查看全部"
+      add_filter: "添加筛选条件"
+    new:
+      basic_info: "基本信息"
+      required: "必须"
+      optional: "可选"
+      one_char: "限一个字符"
+      many_chars: "多个字符"
+      chosen: "选择%{name}"
+      select_choice: "选择并点击"
+      chose_all: "选择全部"
+      clear_all: "取消全部"
+      up: "上移"
+      down: "下移"
+      save: "保存"
+      save_and_add_another: "保存并添加新的"
+      save_and_edit: "保存并再编辑"
+      cancel: "取消"
+    edit:
+      add_new_associated_model_name: "添加新的%{name}"
+    delete:
+      all_of_the_following_related_items_will_be_deleted: "? 所有下面相关的内容将被删除:"
+      are_you_sure_you_want_to_delete_the_object: "你确定要删除 %{model_name}吗"
+      confirmation: "是的，我确定"
+      delete_confirmation: "确认删除"
+      bulk_delete: "下面的对象将被删除，并可能会删除和它们依赖的对象:"
+    export:
+      confirmation: "导出为 %{name}"
+      select: "选择需要导出的字段"
+      fields_from: "%{name}字段"
+      fields_from_associated: "来自相关字段 %{name}"
+      display: "显示 %{name}: %{type}"
+      options_for: "%{name}的选项"
+      empty_value_for_associated_objects: "<empty>"
+      click_to_reverse_selection: "点击反向排序"
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "编码到"
+        encoding_to_help: "选择输出编码。输入空讲保留目前的输入编码: (%{name})"
+        skip_header: "没有头信息"
+        skip_header_help: "不要输出头信息（无字段描述）"
+        default_col_sep: ","
+        col_sep: "栏目分隔"
+        col_sep_help: "默认选空('%{value}')" # value is default_col_sep
+    flash:
+      successful: "%{name} %{action}成功"
+      error: "%{name} %{action}失败"
+      noaction: "没作任何动作"
+    actions:
+      create: "创建"
+      created: "已创建"
+      update: "更新"
+      updated: "已更新"
+      delete: "删除"
+      deleted: "已删除"
+      export: "导出"
+      exported: "已导出"
+    breadcrumbs:
+      delete: "删除"
+      for_object: "历史"
+      show: "显示"
+      edit: "编辑"
+      export: "导出"
+      bulk_destroy: "删除"
+      new: "新建"
+      for_model: "历史"
+      index: "列表"
+      dashboard: "管理概览"
+      
+  ckeditor:
+    page_title: "CKEditor Files Manager"
+    confirm_delete: "删除文件？"
+    buttons:
+      cancel: "取消"
+      upload: "上传"
+      delete: "删除"

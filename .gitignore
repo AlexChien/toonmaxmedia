@@ -1,14 +1,50 @@
-tmp/*
-log/*
-.project
-.idea
-.loadpath
-.metadata/*
-_notes/*
-_notes
-Thumbs.db
+#ignore these files when commiting to a git repository
+#----------------------------------------------------------------------------
+
+# bundler state
+/.bundle
+/vendor/bundle/
+
+# minimal Rails specific artifacts
 db/*.sqlite3
+/log/*
+tmp/*
+
+# various artifacts
+**.war
+*.rbc
+*.sassc
+.sass-cache
+/config/config.yml
+/config/database.yml
+/coverage/
+coverage.data
+/db/*.javadb/
+/db/*.sqlite3-journal
+/public/cache
+/public/stylesheets/compiled
+/public/system
+/spec/tmp/*
+/cache
+/capybara*
+/capybara-*.html
+/gems
+/rerun.txt
+
+# scm revert files
+**.orig
+
+# Mac finder artifacts
+.DS_Store
+
+# Netbeans project directory
+/nbproject/
+
+# Textmate project files
+/*.tmpproj
+
+# vim artifacts
+**.swp
 db/schema.rb
-config/database.yml
-*/bk/
-*.rar
+public/ckeditor_assets/
+public/assets
