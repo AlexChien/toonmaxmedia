@@ -35,6 +35,30 @@
 		$(document).pngFix();
       });
     </script>
+<script type=text/javascript>
+	function setTab03Syn ( i )
+	{
+		selectTab03Syn(i);
+	}
+	
+	function selectTab03Syn ( i )
+	{
+		switch(i){
+			case 1:
+			document.getElementById("TabTab03Con1").style.display="block";
+			document.getElementById("TabTab03Con2").style.display="none";
+			
+break;
+			case 2:
+			document.getElementById("TabTab03Con1").style.display="none";
+			document.getElementById("TabTab03Con2").style.display="block";
+
+break;
+
+		}
+	}
+
+</script>
 </head>
 <body>
 <a name="top"></a>
@@ -63,8 +87,22 @@
       <!--<div class="location"> <span><strong>您的位置</strong></span>
         <div class="blank6"></div><span class=" locspan00a"><a href="/">首  页</a></span>
         <span class=" locspan01a"><a href="works.html">公司作品</a></span> <span class="locspan02a"><a href="works.html">动漫作品</a></span> </div>-->
-      <div class="content_new"> <img src="images/tv01.jpg" /><img src="images/tv02.jpg" /><img src="images/tv03.jpg" /><img src="images/tv04.jpg" /><img src="images/tv05.jpg" /><img src="images/tv06.jpg" /><img src="images/tv08.jpg" /><img src="images/tv09.jpg" /><img src="images/tv10.jpg" /><img src="images/tv11.jpg" />
-        <div class="blank6"></div>
+      <div class="content_new">
+        <div id="works_tv" class="tab">
+          <div id="bg" class="xixi1a">
+            <div id="font1" class="tab1a" onMouseOver="setTab03Syn(1);document.getElementById('bg').className='xixi1a'"></div>
+            <div id="font2" class="tab2a" onMouseOver="setTab03Syn(2);document.getElementById('bg').className='xixi2a'"></div>
+            <div class="blank0"></div>
+          </div>
+          <div id=TabTab03Con1>
+            <div class="blank20"></div>
+            <img src="images/tv03.jpg" /><img src="images/tv05.jpg" /><img src="images/tv08.jpg" /><img src="images/tv04.jpg" /><img src="images/tv01.jpg" /><img src="images/tv06.jpg" /><img src="images/tv13.jpg" /><img src="images/tv10.jpg" /><img src="images/tv09.jpg" /><img src="images/tv11.jpg" /><img src="images/tv02.jpg" /><img src="images/tv12.jpg" />
+          </div>
+          <div id=TabTab03Con2 style="display:none">
+            <div class="blank20"></div>
+            <img src="images/tv14.jpg" /><img src="images/tv15.jpg" /><img src="images/tv16.jpg" /><img src="images/tv17.jpg" /><img src="images/tv18.jpg" /><img src="images/tv19.jpg" /><img src="images/tv20.jpg" />
+          </div>
+        </div>
       </div>
       <div class="content_right_a">
         <div class="righttop"><a>公司出品</a></div>
@@ -76,7 +114,6 @@
               <li><a href="works_property_hz.html">动漫会展</a></li>
               <li><a href="works_property_cbw.html">音像 出版</a></li>
               <li><a href="works_property_zzcp.html">衍生产品</a></li>
-             
             </ul>
           </div>
           <div class="index"><a href="/">返回首页</a></div>
@@ -86,13 +123,15 @@
     </div>
   </div>
 </div>
-<div id="footer"><!-- #BeginLibraryItem "/Library/footer.lbi" --><div class="bottom">
+<div id="footer"><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+  <div class="bottom">
     <div class="blank6"></div>
     <div style="position:absolute; left:95px; top:10px;"><a href="http://www.smg.cn" target="_blank"><img src="images/smglogo02.jpg"></a></div>
     <div class="bottom01">Copyright © 2004-2011 Toonmax Media Co.,Ltd. All Rights Reserved <br/>
       上海炫动传播股份有限公司 <a href="/copyright.html">版权所有</a> <a href="http://www.miibeian.gov.cn/">沪ICP备10019847号-2</a></div>
     <div class="bottom02"><a href="contact.html">联系我们</a><br/>
       <a href="copyright.html">版权声明</a></div>
-  </div><!-- #EndLibraryItem --></div>
+  </div>
+  <!-- #EndLibraryItem --></div>
 </body>
 </html>
