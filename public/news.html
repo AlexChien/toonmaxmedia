@@ -47,7 +47,7 @@
 			if ($.query.get('category_id')) cat_id = $.query.get('category_id');
 			
 			$.ajax({
-				url:'/xml/list-'+cat_id+'.xml',
+				url:'/xml/list-'+cat_id+'.xml?v=2',
 				type:'GET',
 				dataType:'xml',
 				timeout:1000,
