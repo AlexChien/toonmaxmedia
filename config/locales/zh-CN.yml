@@ -101,7 +101,7 @@
       last_word_connector: ", 和 "
     select:
       prompt: "请选择"
-      
+
   activerecord:
     errors:
       full_messages:
@@ -133,42 +133,36 @@
         even: "必须为双数"
 
     models:
-      category: "栏目分类"
-      story: "首页新闻"
-      user: "管理员"
-      template: "页面模版"
+      user: "用户"
       panel: "推荐位"
       panel_content: "推荐内容"
       page: "页面"
-      content: "内容"
       upload: "资源"
       role: "权限"
+      news_item: "新闻"
 
     attributes:
       panel:
+        name: "名称"
+        page: "所属页面"
+        panel_type: "推荐位类型"
+        max_items: "显示条目数"
+        width: "宽"
+        height: "高"
         panel_contents: "推荐内容"
       panel_content:
+        translator: "所属语言"
         is_published: "发布"
         title: "文字标题"
         link: "链接"
         target: "窗口"
-        image: "图片"
+        uploaded_data: "图片"
         panel: "所属推荐位"
+        weight: "权重"
+        pub_date: "发布日期"
+        memo: "简述"
         created_at: "创建时间"
         updated_at: "更新时间"
-      category:
-        name: "分类名称"
-        parent: "父分类"
-        template: "页面模版"
-        panels: "本栏目分类下的推荐位"
-        created_at: "创建时间"
-        updated_at: "更新时间"
-        children: "子分类"
-      story:
-        title_en: "标题(英文)"
-        title_zh_cn: "标题(中文)"
-        path: "访问url"
-        pubdate: "新闻时间"
       user:
         login: "用户名"
         name: "昵称"
@@ -184,46 +178,18 @@
         reset_password_sent_at: "密码重置发送时间"
         confirmation_token: "帐号确认令牌"
         confirmed_at: "帐号确认时间"
-        confirmation_sent_at: "确认时间" 
+        confirmation_sent_at: "确认时间"
         unlock_token: "帐号解锁令牌"
         locked_at: "帐号解锁时间"
         authentication_token: "认证令牌"
         roles: "权限"
         created_at: "创建时间"
         updated_at: "更新时间"
-      template:
-        name: "名称"
-        template: "模版"
-        categories: "应用本模版的栏目分类"
-        created_at: "创建时间"
-        updated_at: "更新时间"
       page:
-        title: "标题"
-        content: "内容"
-        image: "缩略图"
-        seo_keyword: "SEO 关键字"
-        seo_description: "SEO 描述"
-        template: "模版"
-        sub_category: "栏目"
+        name: "名称"
+        panels: "推荐位"
+        parent: "父页面"
         children: "子页面"
-        contents: "内容"
-        created_at: "创建时间"
-        updated_at: "更新时间"
-        is_published: "发布"
-      content:
-        title: "标题(中文)"
-        title_en: "标题(英文)"
-        page: "页面"
-        source: "来源(中文)"
-        source_en: "来源(英文)"
-        source_link: "自行填写链接url"
-        link_type: "链接类型"
-        issue_date: "发布日期"
-        uploads: "资源"
-        desc: "正文内容(中文)"
-        desc_en: "正文内容(英文)"
-        created_at: "创建时间"
-        updated_at: "更新时间"
       upload:
         name: "名称"
         file_type: "类型"
@@ -233,10 +199,16 @@
         updated_at: "更新时间"
       role:
         name: "权限名"
-    
-  site_name: "哈哈资讯网站"
+      news_item:
+        title: "标题"
+        source: "来源"
+        news_date: "新闻时间"
+        category_id: "分类"
+        content: "内容"
+
+  site_name: "CCGExpo网站"
   search_name: "搜索"
-  
+
   home:
     name: "首页"
   views:
@@ -245,66 +217,107 @@
       next: "下一页 &raquo;"
       truncate: "…"
   admin:
-    dashboard:
-      pagename: "网站管理"
-      name: "管理概览"
-      model_name: "模型名称"
-      last_used: "最后使用"
-      records: "记录"
-      modify: "修改"
-      add_new: "添加"
-      show: "查看"
-      ago: "以前"
-      navigation: "导航"
-    history:
-      user: "操作员"
-      changes: "变更记录"
-      name: "历史"
-      page_name: "%{name}的历史"
-      no_activity: "非激活"
-    show:
-      show_in_app: "在app中显示"
-      page_name: "%{name}的详细内容"
-      no_file_found: "没有找到文件"
-    credentials:
-      log_out: "登出"
-    index:
-      edit_action: "编辑"
-      delete_action: "删除"
-      select_action: "选择"
-      export_action: "导出当前页面"
-      show_action: "显示"
-      export_selected: "导出选择记录"
-      delete_selected: "删除已选择的"
-      add_new: "添加"
+    misc:
       search: "搜索"
-      select: "%{name}编辑"
+      filter: "筛选"
+      refresh: "刷新"
       show_all: "查看全部"
       add_filter: "添加筛选条件"
-    new:
-      basic_info: "基本信息"
-      required: "必须"
-      optional: "可选"
-      one_char: "限一个字符"
-      many_chars: "多个字符"
+      bulk_menu_title: "选中记录"
+      remove: "移除"
+      add_new: "添加"
       chosen: "选择%{name}"
-      select_choice: "选择并点击"
       chose_all: "选择全部"
       clear_all: "取消全部"
       up: "上移"
       down: "下移"
-      save: "保存"
-      save_and_add_another: "保存并添加新的"
-      save_and_edit: "保存并再编辑"
+      navigation: "导航"
+      log_out: "登出"
+      ago: "以前"
+    flash:
+      successful: "%{name} 成功 %{action}"
+      error: "%{name} 失败 %{action}"
+      noaction: "无操作"
+      model_not_found: "模型 '%{model}' 不存在"
+      object_not_found: "%{model} id为 '%{id}' 不存在"
+    table_headers:
+      model_name: "模型名称"
+      last_used: "最后使用"
+      records: "记录"
+      username: "操作员"
+      changes: "变更记录"
+      created_at: "日期/时间"
+      item: "Item"
+      message: "消息"
+    actions:
+      dashboard:
+        title: "网站管理"
+        menu: "管理概览"
+        breadcrumb: "管理概览"
+      index:
+        title: "列表 %{model_label_plural}"
+        menu: "列表"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "详情 %{model_label} '%{object_label}'"
+        menu: "查看"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Show in app"
+      new:
+        title: "添加 %{model_label}"
+        menu: "添加"
+        breadcrumb: "添加"
+        link: "添加 %{model_label}"
+        done: "创建"
+      edit:
+        title: "编辑 %{model_label} '%{object_label}'"
+        menu: "编辑"
+        breadcrumb: "编辑"
+        link: "编辑 %{model_label}"
+        done: "更新"
+      delete:
+        title: "删除 %{model_label} '%{object_label}'"
+        menu: "删除"
+        breadcrumb: "删除"
+        link: "删除 '%{object_label}'"
+        done: "删除"
+      bulk_delete:
+        title: "删除 %{model_label_plural}"
+        menu: "批量删除"
+        breadcrumb: "批量删除"
+        bulk_link: "删除选中 %{model_label_plural}"
+      export:
+        title: "导出 %{model_label_plural}"
+        menu: "导出"
+        breadcrumb: "导出"
+        link: "导出 %{model_label_plural}"
+        bulk_link: "导出选中 %{model_label_plural}"
+        done: "导出"
+      history_index:
+        title: "历史 %{model_label_plural}"
+        menu: "历史"
+        breadcrumb: "历史"
+      history_show:
+        title: "历史 %{model_label} '%{object_label}'"
+        menu: "历史"
+        breadcrumb: "历史"
+    form:
       cancel: "取消"
-    edit:
-      add_new_associated_model_name: "添加新的%{name}"
-    delete:
+      basic_info: "基本信息"
+      required: "必须"
+      optional: "可选"
+      one_char: "限一个字符"
+      char_length_up_to: "字符最多"
+      char_length_of: "字符区间"
+      save: "保存"
+      save_and_add_another: "保存并添加"
+      save_and_edit: "保存并编辑"
       all_of_the_following_related_items_will_be_deleted: "? 所有下面相关的内容将被删除:"
       are_you_sure_you_want_to_delete_the_object: "你确定要删除 %{model_name}吗"
       confirmation: "是的，我确定"
-      delete_confirmation: "确认删除"
       bulk_delete: "下面的对象将被删除，并可能会删除和它们依赖的对象:"
+      new_model: "%{name} (添加)"
     export:
       confirmation: "导出为 %{name}"
       select: "选择需要导出的字段"
@@ -313,7 +326,7 @@
       display: "显示 %{name}: %{type}"
       options_for: "%{name}的选项"
       empty_value_for_associated_objects: "<empty>"
-      click_to_reverse_selection: "点击反向排序"
+      click_to_reverse_selection: '点击反向排序'
       csv:
         header_for_root_methods: "%{name}" # 'model' is available
         header_for_association_methods: "%{name} [%{association}]"
@@ -324,31 +337,7 @@
         default_col_sep: ","
         col_sep: "栏目分隔"
         col_sep_help: "默认选空('%{value}')" # value is default_col_sep
-    flash:
-      successful: "%{name} %{action}成功"
-      error: "%{name} %{action}失败"
-      noaction: "没作任何动作"
-    actions:
-      create: "创建"
-      created: "已创建"
-      update: "更新"
-      updated: "已更新"
-      delete: "删除"
-      deleted: "已删除"
-      export: "导出"
-      exported: "已导出"
-    breadcrumbs:
-      delete: "删除"
-      for_object: "历史"
-      show: "显示"
-      edit: "编辑"
-      export: "导出"
-      bulk_destroy: "删除"
-      new: "新建"
-      for_model: "历史"
-      index: "列表"
-      dashboard: "管理概览"
-      
+
   ckeditor:
     page_title: "CKEditor Files Manager"
     confirm_delete: "删除文件？"
@@ -356,3 +345,5 @@
       cancel: "取消"
       upload: "上传"
       delete: "删除"
+  will_paginate:
+    page_gap: "..."

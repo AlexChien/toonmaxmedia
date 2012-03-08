@@ -6,6 +6,13 @@ RailsAdmin.config do |config|
   # If your default_local is different from :en, uncomment the following 2 lines and set your default locale here:
   # require 'i18n'
   # I18n.default_locale = :de
+  #  ==> Included models
+  # Add all excluded models here:
+  config.excluded_models = []
+
+  # Add models here if you want to go 'whitelist mode':
+  # config.included_models = [User, NewsItem]
+
 
   config.current_user_method { current_user } # auto-generated
 
@@ -13,6 +20,16 @@ RailsAdmin.config do |config|
   config.main_app_name = ['炫动传播官方网站', '管理后台']
   # or for a dynamic name:
   # config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, controller.params['action'].titleize] }
+
+  config.model NewsItem do
+    field :title
+    field :source
+    field :news_date
+    field :content, :text do
+      ckeditor true
+      help "请勿直接贴入Word或者外部网页上复制的内容，请使用工具栏上的从‘粘贴为无格式文本’工具来帮助清理内容中的格式信息。标题请使用h1，段落使用p，首字无需手动缩进。"
+    end
+  end
 
   #  ==> Authentication (before_filter)
   # This is run inside the controller instance so you can setup any authentication you need to.
@@ -55,12 +72,6 @@ RailsAdmin.config do |config|
   # Number of default rows per-page:
   # config.default_items_per_page = 20
 
-  #  ==> Included models
-  # Add all excluded models here:
-  # config.excluded_models = []
-
-  # Add models here if you want to go 'whitelist mode':
-  # config.included_models = []
 
   # Application wide tried label methods for models' instances
   # config.label_methods << :description # Default is [:name, :title]

@@ -68,6 +68,7 @@ group :test, :development do
   # gem 'yard'
   # gem "bluecloth"
   # gem 'rails-footnotes', '3.7.4'
+  gem "nokogiri"
 
   # Deploy with Capistrano
   gem 'capistrano'
