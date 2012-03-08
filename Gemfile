@@ -31,6 +31,9 @@ gem 'devise'
 gem "cancan"
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
+# import historical news data
+gem "nokogiri"
+
 # gem 'devise', '~> 1.1.7'
 # gem "cancan"
 # gem "simple_form"
@@ -68,7 +71,6 @@ group :test, :development do
   # gem 'yard'
   # gem "bluecloth"
   # gem 'rails-footnotes', '3.7.4'
-  gem "nokogiri"
 
   # Deploy with Capistrano
   gem 'capistrano'
