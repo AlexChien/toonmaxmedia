@@ -8,10 +8,10 @@ RailsAdmin.config do |config|
   # I18n.default_locale = :de
   #  ==> Included models
   # Add all excluded models here:
-  config.excluded_models = []
+  # config.excluded_models = []
 
   # Add models here if you want to go 'whitelist mode':
-  # config.included_models = [User, NewsItem]
+  config.included_models = [User, NewsItem]
 
 
   config.current_user_method { current_user } # auto-generated
