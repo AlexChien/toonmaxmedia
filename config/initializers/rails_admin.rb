@@ -29,6 +29,11 @@ RailsAdmin.config do |config|
       ckeditor true
       help "请勿直接贴入Word或者外部网页上复制的内容，请使用工具栏上的从‘粘贴为无格式文本’工具来帮助清理内容中的格式信息。标题请使用h1，段落使用p，首字无需手动缩进。"
     end
+    list do
+      field :content do
+        visible false
+      end
+    end
   end
 
   #  ==> Authentication (before_filter)
