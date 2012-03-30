@@ -1,27 +1,45 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Www</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title><%= html_title() %></title>
+  <meta name="keyword" content="<%= html_keyword() %>" />
+  <meta name="description" content="<%= html_description() %>" />
+  <meta name="author" content="Koocaa Interactive Design" />
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href="/stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="/javascripts/jquery-1.2.1.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.query-2.1.7.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.pngFix.js"></script>
+  <script type="text/javascript" src="/javascripts/swfobject.js"></script>
+  <%= yield :header %>
 </head>
-<body>
+<body><a name="top"></a>
+<div id="wrap">
+  <div id="main" class="clearfix">
+    <div id="smglogo">
+      <a href="http://www.smg.cn" target="_blank"><img src="/images/smglogo.jpg"/></a>
+    </div>
+    <div class="toonmaxmedia">
+      <%= render :partial => 'shared/navigation' %>
 
-<%= yield %>
+      <div class="content_new">
+        <%= yield %>
+        <%= yield :main %>
+      </div>
 
-<script type="text/javascript">
+      <div class="content_right_a">
+        <%= yield :right %>
+      </div>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-27593340-1']);
-  _gaq.push(['_trackPageview']);
+      <div class="blank6"></div>
+    </div>
+  </div>
+</div>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+<%= render :partial => 'shared/footer' %>
 
-</script>
 </body>
 </html>

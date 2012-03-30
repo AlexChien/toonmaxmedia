@@ -1,0 +1,21 @@
+<% content_for :main do -%>
+<div class="content_new" id="news_container">
+  <% unless @news.nil? %>
+  <div class="newstitle"><a class="corange"><%= @news.title %></a></div>
+  <div class="newstitle01"><a>来源：<%= @news.source %></a><a>发布时间：<%= @news.news_date %></a></div>
+  <div class="blank12"></div>
+  <%= raw @news.content %>
+  <div class="blank6"></div>
+  <% unless @prev_news.nil? %>
+  <div class="newstitle02">上一篇：<%= link_to @prev_news.title, news_path(@prev_news) %></div>
+  <% end %>
+  <% unless @next_news.nil? %>
+  <div class="newstitle03">下一篇：<%= link_to @next_news.title, news_path(@next_news) %></div>
+  <% end %>
+  <% end %>
+</div>
+<% end -%>
+
+<% content_for :right do -%>
+<%= render :partial => "nav" %>
+<% end -%>

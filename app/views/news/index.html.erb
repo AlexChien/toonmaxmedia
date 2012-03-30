@@ -1,0 +1,29 @@
+
+<% content_for :main do -%>
+<div class="news" id="news_container">
+  <% unless @news_items.empty? %>
+  <ul>
+    <% @news_items.each do |news| %>
+    <li>
+      <span class="newsspan01" style="font-weight:bold;">
+        <%= link_to news.title, news_path(news) %>
+      <!-- <a href="/news_content.html?id=47">大电影《喜羊羊与灰太狼之开心闯龙年》1.65亿完美收官</a> -->
+      </span>
+      <span class="newsspan02"><%= news.news_date %></span>
+      <span class="newsspan03"><img src="images/n_time.jpg"></span>
+      <span class="blank0"></span>
+    </li>
+    <% end %>
+  </ul>
+  <% end %>
+</div>
+<div class="blank12"></div>
+<div class="yellow" style="">
+  <%= will_paginate @news_items %>
+
+</div>
+<% end -%>
+
+<% content_for :right do -%>
+  <%= render :partial => "nav" %>
+<% end -%>
