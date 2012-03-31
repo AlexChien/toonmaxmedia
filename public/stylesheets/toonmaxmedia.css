@@ -252,3 +252,5 @@ DIV.yellow SPAN.disabled { border:#f5f5f5 1px solid; padding:1px 5px 1px 5px; ma
 .copyright_01 { line-height:24px; padding-left:18px;}
 
 .pagination .current { background-color:#F39800;color:white;padding: 1px 5px 1px 5px;border:#E6E6E6 1px solid;margin: 2px;font-style: normal;}
+
+.video { width:304px; height:248px; background:url(../images/videobg.jpg) no-repeat; padding:65px 25px 27px 31px; float:right; }

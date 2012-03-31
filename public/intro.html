@@ -2,9 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <title>炫动传播 toonmaxmedia</title>
-
 <link href="stylesheets/toonmaxmedia.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="javascripts/jquery-1.2.1.js"></script>
 <script type="text/javascript" src="javascripts/jquery.pngFix.js"></script>
@@ -38,8 +36,47 @@
     $(document).pngFix();
       });
     </script>
+<script type="text/javascript">
+ <!--
+ /* 
+   @ swf()   flash调用函数 
+   @ swf     flash地址，如果是播放器，则可以在其地址后面加上（？url=要播放的视频地址)
+   @ swfid   插入object的id
+   @ width   flash的宽度，为数字
+   @ height  flash的高度，为数字
+   @ divid   插入flash代码的容器的id
+   @ wmode   flash的wmode控制参数，可不填  
+*/
+function swf(swf,swfid,width,height,divid,wmode){
+    var n= swf.indexOf("?");                           //判断flash地址是否包含？
+    var flashUrl = (n!=-1)?swf.substring(0,n):swf;     //如果地址包含？号则定义flashUrl等于地址？前面的值，否则flashUrl的值等于传入的地址
+    var flashVars = (n!=-1)?swf.substring(n+1):'';     //如果地址包含？号则定义flashVars等于地址？后面的值
+                                                        //下面是一段flash播放器的代码，以及插入一些传递的参数和变量。
+    var swfStr = '<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="'+width+'" height="'+height+'" id="'+swfid+'" align="middle">';
+    swfStr += '<param name="allowScriptAccess" value="always" />';
+    swfStr += '<param name="movie" value="'+flashUrl+'" />';
+    swfStr += '<param name="flashvars" value="'+flashVars+'" />';
+	swfStr += '<param name="menu" value="false" />';
+    swfStr += '<param name="allowFullScreen" value="true" />';
+    swfStr += '<param name="quality" value="high" />';
+    swfStr += '<param name="wmode" value="'+((!wmode)?"transparent":"")+'" />';
+    swfStr += '<embed src="'+flashUrl+'" flashvars="'+flashVars+'" quality="high" ';
+    swfStr += 'wmode="'+((!wmode)?"transparent":"")+'" ';
+    swfStr += 'width="'+width+'" height="'+height+'" name="'+swfid+'" allowFullScreen="true" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />';
+    swfStr += '</object>';
+    if(divid){
+        document.getElementById(divid).innerHTML = swfStr;   //将flash代码插入指定容器id
+    }else{
+        document.write(swfStr);
+    
+    }
+    return (document[swfid]||window[swfid]);
+}
+ -->
+</script>
 </head>
-<body><a name="top"></a>
+<body>
+<a name="top"></a>
 <div id="wrap">
   <div id="main" class="clearfix">
     <div id="smglogo"><a href="http://www.smg.cn" target="_blank"><img src="images/smglogo.jpg" /></a></div>
@@ -66,18 +103,43 @@
         <div class="blank6"></div><span class=" locspan00a"><a href="/">首  页</a></span>
         <span class=" locspan01a"><a href="intro.html">公司介绍</a></span> <span class=" locspan02a"><a href="intro.html">公司简介</a></span></div></div>-->
       <div class="content_intro" >
-        <span><a class="corange">上海炫动传播股份有限公司</a></span>
-        <p style="text-indent:0px;">上海东方传媒集团有限公司(SMG)控股子公司</p>
-        <div class="blank20"></div>
-        <span>
-        <p >炫动传播，依托SMG雄厚背景，是中国内地领先的动漫企业，业务覆盖动漫全产业链，公司以动漫和教育为双核，形成了动漫创投、媒体运营、产业拓展三大核心业务板块。</p>
-        <p>公司是中国原创动画电影票房最高纪录保有者，领衔出品了《喜羊羊与灰太狼》系列大电影；公司是中国最大的少儿全媒体经营者，打造有“炫动卡通”、“哈哈少儿”等全国知名媒体；公司致力于动漫衍生产业的拓展，覆盖动漫会展、授权代理、主题地产等领域，旗下“CCG EXPO”是国内动漫界最具影响力的会展品牌。</p>
-
-        </span>
-        <div class="blank6"></div>
+        <!--文字布局更新-->
+        <div style="width:300px; float:left;"> <span><a class="corange">上海炫动传播股份有限公司</a></span>
+          <p style="text-indent:0px;">上海东方传媒集团有限公司(SMG)控股子公司</p>
+          <div class="blank20"></div>
+          <span >
+          <p >炫动传播，依托SMG雄厚背景，是中国内地领先的动漫企业，业务覆盖动漫全产业链，公司以动漫和教育为双核，形成了动漫创投、媒体运营、产业拓展三大核心业务板块。</p>
+          <p>公司是中国原创动画电影票房最高纪录保有者，领衔出品了《喜羊羊与灰太狼》系列大电影；公司是中国最大的少儿全媒体经营者，打造有“炫动卡通”、“哈哈少儿”等全国知名媒体；公司致力于动漫衍生产业的拓展，覆盖动漫会展、授权代理、主题地产等领域，旗下“CCG EXPO”是国内动漫界最具影响力的会展品牌。</p>
+          </span> </div>
+        <!--文字布局更新-->
+        <!--视频-->
+        <div class="video">
+          <div id="vplay">
+            <script type="text/javascript">
+		 <!--
+		 /*
+			 参书说明：		 
+			 file：位置相对于播放器
+			 image：位置相对于当前页面
+			 zoom：视频放大倍数
+			 autoStart：是否自动播放
+			 repeat：是否重复播放
+		 */
+			var vplayer = swf("vplay.swf?file=toonmedia.flv&autoStart=false&repeat=false&image=video.jpg&zoom=1.3","vplayer","304","248");			 
+			 //为了方便观察，我将另一个函数也写在了这里
+			function vplay(flv)
+			{
+				vplayer.playVideo(flv);  //通过vplayer对象调用vpalyer.swf里的vplay函数播放flv
+			}
+		  -->
+		</script>
+          </div>
+        </div>
+        <!--视频结束-->
+        <div class="blank30"></div>
         <div><img src="images/intro.jpg" /></div>
         <div class="blank6"></div>
-    <!--<div><img src="images/img12e.jpg" border="0" usemap="#Map" />
+        <!--<div><img src="images/img12e.jpg" border="0" usemap="#Map" />
       <map name="Map" id="Map">
         <area shape="rect" coords="110,43,185,120" href="javascript:void();" />
         <area shape="rect" coords="283,20,366,98" href="intro_01.html" />
@@ -104,7 +166,8 @@
     </div>
   </div>
 </div>
-<div id="footer"><!-- #BeginLibraryItem "/Library/footer.lbi" --><div class="bottom">
+<div id="footer"><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+  <div class="bottom">
     <div class="blank6"></div>
     <div style="position:absolute; left:95px; top:10px;"><a href="http://www.smg.cn" target="_blank"><img src="images/smglogo02.jpg"></a></div>
     <div class="bottom01">Copyright © 2004-2011 Toonmax Media Co.,Ltd. All Rights Reserved <br/>
@@ -124,6 +187,7 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
      })();
 
-  </script><!-- #EndLibraryItem --></div>
+  </script>
+  <!-- #EndLibraryItem --></div>
 </body>
 </html>
