@@ -236,9 +236,21 @@ DIV.yellow SPAN.disabled { border:#f5f5f5 1px solid; padding:1px 5px 1px 5px; ma
 #works_property_hz .tab1a{width:180px;height:56px;line-height:30px;float:left;text-align:center;cursor:pointer; font-size:14px; font-weight:bold;color:#FFF; }
 #works_property_hz .tab2a{width:180px;height:56px;line-height:30px;float:left;text-align:center;cursor:pointer; font-size:14px; font-weight:bold;color:#FFF; }
 
+#works .xixi1b{width:680px;height:56px;line-height:30px;background: url(../images/workstab1.jpg) no-repeat;cursor:pointer; }
+#works .xixi2b{width:680px;height:56px;line-height:30px;background: url(../images/workstab2.jpg) no-repeat;cursor:pointer; }
+#works .xixi3b{width:680px;height:56px;line-height:30px;background: url(../images/workstab3.jpg) no-repeat;cursor:pointer; }
+#works .xixi4b{width:680px;height:56px;line-height:30px;background: url(../images/workstab4.jpg) no-repeat;cursor:pointer; }
+
+#works .tab1b{width:249px;height:56px;line-height:30px;float:left;text-align:center;cursor:pointer; font-size:14px; font-weight:bold;color:#FFF; }
+#works .tab2b{width:163px;height:56px;line-height:30px;float:left;text-align:center;cursor:pointer;font-size:14px; font-weight:bold;color:#999999; }
+#works .tab3b{width:203px;height:56px;line-height:30px;float:left;text-align:center;cursor:pointer;font-size:14px; font-weight:bold;color:#999999; }
+#works .tab4b{width:65px;height:56px;line-height:30px;float:left;text-align:center;cursor:pointer;font-size:14px; font-weight:bold;color:#999999;}
+
 
 .copy-logo {float:left;margin-right:15px; margin-top:3px; width:150px; height:30px;}
 
 .copyright_01 { line-height:24px; padding-left:18px;}
 
 .pagination .current { background-color:#F39800;color:white;padding: 1px 5px 1px 5px;border:#E6E6E6 1px solid;margin: 2px;font-style: normal;}
+
+.video { width:304px; height:248px; background:url(../images/videobg.jpg) no-repeat; padding:65px 25px 27px 31px; float:right; }
