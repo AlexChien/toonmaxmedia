@@ -76,6 +76,7 @@ group :test, :development do
   gem 'capistrano'
   gem 'capistrano-ext'
   gem "capistrano_colors", "~> 0.5.5"
+  gem 'rvm-capistrano'
 end
 
 # State machine
