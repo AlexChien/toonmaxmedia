@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
-gem 'rake', '0.8.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,7 +14,7 @@ gem 'mysql2'
 gem 'will_paginate', '~> 3.0.0'
 
 # File Uploads
-gem 'paperclip'
+gem 'paperclip', '~> 2.7'
 # gem 'carrierwave'
 
 gem 'sprockets'
@@ -60,9 +59,18 @@ end
 group :test, :development do
   gem "rspec", "~> 2.7"
   gem "rspec-rails", "~> 2.7"
+
+  # speed up rspec
+  # http://ruby.railstutorial.org/chapters/static-pages#top
+  gem "factory_girl_rails", "~> 1.4"
+  gem "faker"
   gem "guard-rspec"
+  gem "spork", "~> 0.9"
+  gem "guard-spork", "~> 0.8"
+  gem "pry"
+  gem "database_cleaner", "0.7.1"
+
   gem "timecop"
-  gem "factory_girl_rails"
   gem "shoulda-matchers"
   gem "rcov"
   gem "delorean"
