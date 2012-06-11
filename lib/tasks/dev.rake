@@ -29,4 +29,9 @@ namespace :dev do
     end
   end
 
+  desc "cp un-ided ckeditor picture files to ided sub folders"
+  task :move_unided_picstures_to_ided_sub_folders => :environment do
+    Ckeditor::Picture.move_files_to_ided_fs
+  end
+
 end
