@@ -21,6 +21,8 @@ gem 'sprockets'
 gem "jammit"  #asset_packager replacer
 gem 'execjs'
 gem 'therubyracer'
+gem 'libv8', '3.3.10.4'
+
 gem "jquery-rails"
 
 # rails_admin

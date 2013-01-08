@@ -270,6 +270,7 @@ DEPENDENCIES
   guard-spork (~> 0.8)
   jammit
   jquery-rails
+  libv8 (= 3.3.10.4)
   mysql2
   nokogiri
   paperclip (~> 2.7)
