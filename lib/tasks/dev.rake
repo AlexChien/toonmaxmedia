@@ -35,3 +35,44 @@ namespace :dev do
   end
 
 end
+
+namespace :dict do
+  desc "generate database dictionary"
+  task :generate_db_dict => :environment do
+    I18n.t(:foo)
+    ar = I18n.backend.send(:translations)[:"zh-CN"][:activerecord]
+
+    models = ar[:models].inject({}){ |memo, (k,v)| memo[k.to_s] = v; memo }.sort
+    fields = ar[:attributes]
+    puts "数据表"
+    models.each do |model|
+      key = model.first
+      value = model.last
+      table_name = key.to_s.classify.tableize.gsub("/","_")
+      puts "#{table_name}\t#{value}"
+      puts "----------"
+      columns = fields[key.to_sym]
+      columns.each do |k,v|
+        puts "#{k.to_s}\t#{v}"
+      end
+      puts ""
+    end
+
+    puts "schema_migrations\t数据库迁移版本历史"
+    puts "----------"
+    puts "version\t版本名"
+    puts ""
+
+    puts "rails_admin_histories\t管理后台操作历史"
+    puts "----------"
+    puts "message\t操作消息"
+    puts "username\t用户名"
+    puts "item\t操作对象id"
+    puts "table\t操作表名"
+    puts "month\t月"
+    puts "year\t年"
+    puts ""
+
+    puts "总共#{models.size+2}个数据表"
+  end
+end
