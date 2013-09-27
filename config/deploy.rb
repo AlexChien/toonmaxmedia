@@ -1,4 +1,4 @@
-set :stages, %w(staging production)
+set :stages, %w(staging production kankan)
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 require 'capistrano_colors'
